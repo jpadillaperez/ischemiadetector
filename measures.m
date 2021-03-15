@@ -245,61 +245,8 @@ while ilat<no_beats-1,
        else st(k,l)=st(k-1,l); qd(k,l)=qd(k-1,l); tp(k,l)=tp(k-1,l); ta(k,l)=ta(k-1,l); qt(k,l)=qt(k-1,l);  
        end  
      end
-   end %%%PRUEBA
-  
-  
-%{
-   %l=1;
-   for l=1:no_leadsb %%PRUEBA %%Pienso que la variable que esta mal es qrsan, porque deberia de tener mas dimensiones. si no, puedo intentar leer la variable ecg por partes en qrsan
-     for k=ilat+1:flat-1
-       [difq,kr]=min(abs(qrsan.time(k)-qan(l).time));  
-       if (difq<50*heasig.freq/1000) 
-   
-   
-         % ----  STn level measurement  ----
- 	 timef=qan(l).time(kr); timet=timef+160*heasig.freq/1000;
-	 an1=selan(qrsan,')','1',l,[timef timet]); %%AQUI HABIA UNA VARIABLE ANNOT QUE NO EXISTE
-         if ~isempty(an1(l).time), qrsoff(l)=an1(l).time(1); dref1(l)=qrsoff(l)-qan(l).time(kr);
-         else qrsoff(l)=qan(l).time(kr)+dref1(l)*heasig.freq/1000; end
-         jpn(k,l)=qrsoff(l)+60*heasig.freq/1000-ti;
-   
-         timef=qan(1).time(kr)-160*heasig.freq/1000; timet=qan(1).time(kr);
-	 an1=selan(annot,'(','1',l,[timef timet]); %%AQUI HABIA UNA VARIABLE ANNOT QUE NO EXISTE
-	 if ~isempty(an1(l).time), qrson(l)=an1(l).time; dref2(l)=qan(1).time(kr)-qrson(l);
-
-         timef=qan(l).time(kr)-160*heasig.freq/1000; timet=qan(l).time(kr);
-	 an1=selan(qrsan,'(','1',l,[timef timet]); %%AQUI HABIA UNA VARIABLE ANNOT QUE NO EXISTE
-	 if ~isempty(an1(l).time), qrson(l)=an1(l).time; dref2(l)=qan(l).time(kr)-qrson(l);
-         else qrson(l)=qan(l).time(kr)-dref2(l)*heasig.freq/1000; end
-
-	 basv(l)=mean(ecg(qrson(l)-15*heasig.freq/1000-ti:qrson(l)-5*heasig.freq/1000-ti,l));  
-         st(k,l)=ecg(jpn(k,l),l)-basv(l);
-
-
-         % ----  QRS duration measurement  ----
-         qd(k,l)=qrsoff(l)-qrson(l); 
-
-         % ----  T position measurement  ---- 
-         timef=qrsoff(l); timet=qan(l).time(kr)+500*heasig.freq/1000;
-	 an1=selan(qrsan,'t','',l,[timef timet]); %%AQUI HABIA UNA VARIABLE ANNOT QUE NO EXISTE
-	 if ~isempty(an1(l).time), tppos(l)=an1(l).time(1); dref3(l)=tppos(l)-qan(l).time(kr);
-         else tppos(l)=qan(l).time(kr)+dref3(l)*heasig.freq/1000; end
-         tp(k,l)=tppos(l)-qan(l).time(kr);
-
-         % ----  T amplitude measurement  ----
-         ta(k,l)=ecg(tppos(l)-ti,l)-basv(l);
-
-         % ----  QT measurement  ---- 
-	 an1=selan(qrsan,')','2',l,[timef timet]); %%AQUI HABIA UNA VARIABLE ANNOT QUE NO EXISTE
-	 if ~isempty(an1(l).time), tpend(l)=an1(l).time(1); dref4(l)=tpend(l)-qan(l).time(kr);
-         else tpend(l)=qan(l).time(kr)+dref4(l)*heasig.freq/1000; end
-         qt(k,l)=tpend(l)-qrson(l);
+   end
  
-       else st(k,l)=st(k-1,l); qd(k,l)=qd(k-1,l); tp(k,l)=tp(k-1,l); ta(k,l)=ta(k-1,l); qt(k,l)=qt(k-1,l);  
-       end;  
-     end
-  end %%%PRUEBA
-%}
    ilat=ilat+nlat;
    nlat=min(nlat,no_beats-ilat-1); % # beats for next loop   
    ti=qrsan.time(ilat)-0.2*heasig.freq;
