@@ -103,7 +103,7 @@ if rej_flag==1
   for v=1:length(notstime)
     if typerec==0
       bast=getvec(fid,heasig,notstime(v),notstime(v)+5)./heasig.gain*1000; %%%%%AQUI HE HECHO UN CAMBIO EN LA FUNCION GETVEC PORQUE SI NO HAY 9 FID SEÑALANDO AL MISMO ARCHIVO Y NO FUNCIONA
-      bas(v,:)=mean(bast'); %%%%%%DIFERENCIA
+      bas(v,:)=mean(bast');
     end
     if typerec==1      
       bast=(getecg(dirsig,ecgnr,[notstime(v),notstime(v)+4],[1:no_leads]))'; 
