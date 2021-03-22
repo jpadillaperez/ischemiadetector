@@ -19,11 +19,12 @@ nor_flag=1;
 rej_flag = 1;
 brlim=200;
 nbo_flag=1;
+pwl_flag=1;
 
 lista = listOfEcgNumbers;
 for k=1:size(lista,2)
     eval(['ecgnr=' 'deblank(lista{k});']);
-    [timebeats,st,qt,qd,ta,tp]=measures(dirhea,dirsig,dirann,anot1,anot2,ecgnr,typerec,leadsele,t,bas_flag,basltype,baz_flag,rej_flag,brlim,nbo_flag);
+    [timebeats,st,qt,qd,ta,tp]=measures(dirhea,dirsig,dirann,anot1,anot2,ecgnr,typerec,leadsele,t,bas_flag,basltype,baz_flag,rej_flag,brlim,nbo_flag,pwl_flag);
     rname=['ms_'  ecgnr];
     eval(['save ' rname  ' timebeats st qt qd ta tp']);
 end
