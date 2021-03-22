@@ -12,7 +12,7 @@ if heasig.fmt(1)==8,
     y = [];
 elseif heasig.fmt(1)==16 || heasig.fmt(1) == 61
     if isfield(heasig,'offset')
-        fseek(fid(1),heasig.offset(1)+2*(x1-1)*heasig.nsig,-1);%%%%%CAMBIO
+        fseek(fid(1),heasig.offset(1)+2*(x1-1)*heasig.nsig,-1); %skips the offset and then, x1-1 measurements of a single time corresponding to each of the 9 leads. Multiplies by 2 becuase each measurement occupies 2 
     else
         fseek(fid(1),2*(x1-1)*heasig.nsig,-1);
     end
