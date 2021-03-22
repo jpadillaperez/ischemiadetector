@@ -1,4 +1,4 @@
-function [timebeats,st,qt,qd,ta,tp]=measures(dirhea,dirsig,dirann,anot1,anot2,ecgnr,typerec,leadsele,t,bas_flag,basltype,baz_flag,rej_flag,brlim,nbo_flag);
+function [timebeats,st,qt,qd,ta,tp]=measures(dirhea,dirsig,dirann,anot1,anot2,ecgnr,typerec,leadsele,t,bas_flag,basltype,baz_flag,rej_flag,brlim,nbo_flag,pwl_flag);
 
 % ----  Measures Principal program  ----
 % 
@@ -21,6 +21,7 @@ function [timebeats,st,qt,qd,ta,tp]=measures(dirhea,dirsig,dirann,anot1,anot2,ec
 %   rej_flag: rejection of beats with excess of baseline (0:not applied 1:applied)
 %   brlim: maximum of excess of baseline (in microvolts) for the beats to be removed
 %   nbo_flag: rejection of non-normal beats and neighbours (0:not applied 1:applied)
+%   pwl_flag: powerline interference removal (0: not applied 1: 50Hz removing 2: 60Hz removing)
 %
 % Output parameter:
 %   timebeats:  vector with positions of each beat (each ST level measure)
@@ -95,18 +96,38 @@ end
 notstime=qrsan.time-round(80*heasig.freq/1000);
 if (notstime(1)<=0), notstime(1)=1; end;
 
+%---- Powerline Interference Removal ----
+if pwl_flag ==1     %Filtrado de 60Hz
+    sinal = getvec(fid,heasig,1,inf)./heasig.gain(1)*1000;
+    for j = 1:heasig.nsig
+        sinal(j,:) = filtradoRed(sinal(j,:),1000,60);
+    end
+elseif pwl_flag ==2 %Filtrado de 50Hz
+    sinal = getvec(fid,heasig,1,inf)./heasig.gain(1)*1000;
+    for j = 1:heasig.nsig
+        sinal(j,:) = filtradoRed(sinal(j,:),1000,50);
+    end
+end
+
 % ----  Removing of beats with excess of baseline ----
 if rej_flag==1
   bast=zeros(5,no_leads);
   bas=zeros(length(notstime),no_leads);
   for v=1:length(notstime)
-    if typerec==0
-      bast=getvec(fid,heasig,notstime(v),notstime(v)+5)./heasig.gain*1000;
-      bas(v,:)=mean(bast'); %transposed
-    end
-    if typerec==1      
-      bast=(getecg(dirsig,ecgnr,[notstime(v),notstime(v)+4],[1:no_leads]))'; 
-      bas(v,:)=mean(bast); 
+    if (pwl_flag==0)
+        if typerec==0
+          bast=getvec(fid,heasig,notstime(v),notstime(v)+5)./heasig.gain*1000;
+          bas(v,:)=mean(bast'); %transposed
+        end
+        if typerec==1      
+          bast=(getecg(dirsig,ecgnr,[notstime(v),notstime(v)+4],[1:no_leads]))'; 
+          bas(v,:)=mean(bast); 
+        end
+    else
+        if typerec==0
+          bast=sinal(:,notstime(v): notstime(v)+4);
+          bas(v,:)=mean(bast'); %transposed
+        end
     end
  end
  br=abs(diff(bas));
@@ -167,14 +188,21 @@ while ilat<no_beats-1,
    if nlat>=length(qrsan.time)
       tf=qrsan.time(nlat)+0.1*heasig.freq;
       nlat=nlat-2;
-   else tf=qrsan.time(flat)+0.1*heasig.freq; end
-   if typerec==0 ecg=getvec(fid,heasig,ti,tf)./heasig.gain*1000; end 
-   if typerec==1 ecg=(getecg(dirsig,ecgnr,[ti,tf],[1:no_leadsb]))'; end
+   else
+       tf=qrsan.time(flat)+0.1*heasig.freq;
+   end
+   
+   if (pwl_flag==0)
+       if typerec==0 ecg=getvec(fid,heasig,ti,tf)./heasig.gain*1000; end 
+       if typerec==1 ecg=(getecg(dirsig,ecgnr,[ti,tf],[1:no_leadsb]))'; end
+   else
+       ecg = sinal(:,ti:tf-1);
+   end
   ecg=ecg';
    % ---- baseline wander removing  ---- 
    if bas_flag==1
      if basltype==1, ecg=baseline2(ecg,notstime(ilat:flat),ti);  % ---- cubic splines ----
-     elseif basltype==2, ecg=baseline1(ecg,heasig.freq,.3);   % ---- IIR filtering ----
+     elseif basltype==2, ecg=baseline1(ecg,heasig.freq,.3);      % ---- IIR filtering ----
      ecg=round(ecg);
      end
    end
