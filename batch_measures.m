@@ -1,3 +1,6 @@
+%Creates the local measures (st level, t wave amplitude, ...) for all the
+%recordings in a database
+
 fclose('all');
 clear;clc;close;
 

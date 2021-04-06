@@ -293,6 +293,10 @@ if(size(st,2)>9)
     flag = 1;
 end
 
+%The following functions (leadcalc and leadcalct) change the disposition of the leads to the
+%following order:
+%V1, V2, V3, V4, V5, V6, aVL, I, aVR, II, aVF
+
 st=leadcalc(st,'extr');
 qt=leadcalct(qt,'extr');
 qd=leadcalct(qd,'extr');

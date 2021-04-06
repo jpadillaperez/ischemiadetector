@@ -1,4 +1,5 @@
-%%Calculate delta_index from local measurements
+%%Calculate delta_index and ICS_index from local measurements (st, ta, tp,
+%%..) obtained in measures.m
 
 %recorded ecgs with standard beats
 lista1=char('002c','003b','006b','007b','008b','009b','010b','011b','013b','014b','015b','016b','017b','018a','019b','020b','021b','022c','023b','025b','026b','029b','030b','031b','032b','037b','039b','040b','041b','046b','047b','048b','049a','050b','051b','052b','053b','054b','055a','056a','057b','058a','059a','061a','062a','063a','065b','066b','068b','069b','070a','071b','072b','073b','074b','075a','077b','079b','080b','081b','082b','083b','084a','085a','086a','087a','088a','090b','091b','092b','094b','095b','096b','097b','098b','099b','100a','101a','102b','104b','105a','106b','107b');
@@ -97,11 +98,11 @@ for k=1:size(lista1,1)
     f_tp(k,:,ttt)=fa_tp;
     f_ta(k,:,ttt)=fa_ta;
   end
-    delt_st = delta_st(k,:,1:ttt);
-    delt_qt = delta_qt(k,:,1:ttt);
-    delt_qd = delta_qd(k,:,1:ttt);
-    delt_tp = delta_tp(k,:,1:ttt);
-    delt_ta = delta_ta(k,:,1:ttt);
+    delt_st = squeeze(delta_st(k,:,1:ttt));
+    delt_qt = squeeze(delta_qt(k,:,1:ttt));
+    delt_qd = squeeze(delta_qd(k,:,1:ttt));
+    delt_tp = squeeze(delta_tp(k,:,1:ttt));
+    delt_ta = squeeze(delta_ta(k,:,1:ttt));
     fa_st = squeeze(f_st(k,:,1:ttt));
     fa_qt = squeeze(f_qt(k,:,1:ttt));
     fa_qd = squeeze(f_qd(k,:,1:ttt));
