@@ -1,0 +1,5374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wilks_ICS.htm</title>
+<meta charset="utf-8"/>
+<style type="text/css">.details{position: absolute;left: -9999px;}
+.IELargeImage{display:inline-block;font-family: Arial, Helvetica, sans-serif;font-size: medium;color:#ff0000;font-weight:normal;vertical-align:middle;}</style></head>
+<body>
+<p align="left"><head><style type="text/css">p{color:0;font-family:Monospaced;font-size:14pt;font-style:normal;font-weight:normal;text-decoration:none}</style></head><BR>
+DATASET CLOSE DataSet1 .
+
+
+*Analysis original sin filtrado.
+GET DATA /TYPE=XLSX
+  /FILE='C:\Users\Jorge\GDrive\Universidad\BSICOS\Project\Candidates2Params(NonFiltered)\data_spss_ics.xlsx'
+  /SHEET=name 'Sheet1'
+  /READNAMES=on
+  /ASSUMEDSTRWIDTH=32767.
+DATASET NAME DataSet1 WINDOW=FRONT.
+
+DISCRIMINANT
+  /GROUPS=groups(1 3)
+  /VARIABLES=st1 qt1 qd1 ta1 tp1 st2 qt2 qd2 ta2 tp2 st3 qt3 qd3 ta3 tp3 st4 qt4 qd4 ta4 tp4 st5
+    qt5 qd5 ta5 tp5 st6 qt6 qd6 ta6 tp6 st7 qt7 qd7 ta7 tp7 st8 qt8 qd8 ta8 tp8 st9 qt9 qd9 ta9 tp9
+  /ANALYSIS ALL
+  /METHOD=WILKS
+  /FIN=4.5
+  /FOUT=3.5
+  /PRIORS SIZE
+  /HISTORY
+  /STATISTICS=RAW CROSSVALID
+  /PLOT=COMBINED
+  /CLASSIFY=NONMISSING POOLED.</p><BR><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Discriminant</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="1" data-NumRows="6" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="N;Percent" data-row-labels="Valid ;Excluded Missing or out-of-range group codes; At least one missing discriminating variable; Both missing or out-of-range group codes and at least one missing discriminating variable; Total;Total " >
+<caption class="title" style="width:363px">Analysis Case Processing Summary<span class="details">Analysis Case Processing Summary, table, 1 levels of column headers and 2 levels of row headers, table with 4 columns and 8 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" colspan="2">Unweighted Cases</td>
+<td class="columnLabels dataAreaLeft vCC role3">N</td>
+<td class="columnLabels vCC role3">Percent</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" colspan="2">Valid</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">83</td>
+<td class=" e dataAreaTop vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role2" rowspan="4">Excluded</td>
+<td class="rowLabels hCR vCR role3">Missing or out-of-range group codes</td>
+<td class=" o dataAreaLeft hCR vCC">0</td>
+<td class=" o hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">At least one missing discriminating variable</td>
+<td class=" e dataAreaLeft hCR vCC">0</td>
+<td class=" e hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">Both missing or out-of-range group codes and at least one missing discriminating variable</td>
+<td class=" o dataAreaLeft hCR vCC">0</td>
+<td class=" o hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">Total</td>
+<td class=" e dataAreaLeft hCR vCC">0</td>
+<td class=" e hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" colspan="2">Total</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">100.0</td>
+</tr>
+<tr>
+<td  style="width:69px"></td>
+<td  style="width:160px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="2" data-NumRows="180" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Valid N (listwise) Unweighted; Weighted" data-row-labels="1 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; st 3; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; ta 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9;2 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; st 3; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; ta 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9;3 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; st 3; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; ta 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9;Total st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; st 3; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; ta 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9" >
+<caption class="title" style="width:252px">Group Statistics<span class="details">Group Statistics, table, 2 levels of column headers and 2 levels of row headers, table with 4 columns and 183 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2" colspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hCC vCC role2" colspan="2">Valid N (listwise)</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">Unweighted</td>
+<td class="columnLabels vCC role3">Weighted</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" rowspan="45">1</td>
+<td class="rowLabels dataAreaTop vCR role3">st 1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">27</td>
+<td class=" o dataAreaTop vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" e dataAreaLeft hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" o dataAreaLeft hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="45">2</td>
+<td class="rowLabels hCR vCR role3">st 1</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" o dataAreaLeft hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" e dataAreaLeft hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="45">3</td>
+<td class="rowLabels hCR vCR role3">st 1</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" e dataAreaLeft hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" o dataAreaLeft hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="45">Total</td>
+<td class="rowLabels hCR vCR role3">st 1</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" e dataAreaLeft hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td  style="width:48px"></td>
+<td  style="width:48px"></td>
+<td  style="width:85px"></td>
+<td  style="width:71px"></td>
+</tr>
+</tbody>
+</table>
+</div><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Analysis&nbsp;1</b></H1></CENTER><BR><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Stepwise&nbsp;Statistics</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="3" data-NumRows="3" data-NumCols="9" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Entered  ;Wilks' Lambda Statistic ; df1 ; df2 ; df3 ; Exact F Statistic;  df1;  df2;  Sig." data-row-labels="1;2;3" >
+<caption class="title" style="width:651px" title="a. Maximum number of steps is 90.
+b. Minimum partial F to enter is 4.5.
+c. Maximum partial F to remove is 3.5.
+d. F level, tolerance, or VIN insufficient for further computation.">Variables Entered/Removed<sup>a,b,c,d</sup><span class="details">Variables Entered/Removed, table, 3 levels of column headers and 1 levels of row headers, table with 10 columns and 12 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="3">Step</td>
+<td class="columnLabels dataAreaLeft hDC vCC role3" rowspan="3">Entered</td>
+<td class="columnLabels hCC vCC role2" colspan="8">Wilks' Lambda</td>
+</tr>
+<tr>
+<td class="columnLabels hCC vCC role3" rowspan="2">Statistic</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">df1</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">df2</td>
+<td class="columnLabels hDC vCC role3" rowspan="2">df3</td>
+<td class="columnLabels hCC vCC role2" colspan="4">Exact F</td>
+</tr>
+<tr>
+<td class="columnLabels vCC role3">Statistic</td>
+<td class="columnLabels vCC role3">df1</td>
+<td class="columnLabels vCC role3">df2</td>
+<td class="columnLabels vCC role3">Sig.</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" e dataAreaTop dataAreaLeft vCC" style="text-align:left;">st 3</td>
+<td class=" e dataAreaTop vCC">.635</td>
+<td class=" e dataAreaTop vCC">1</td>
+<td class=" e dataAreaTop vCC">2</td>
+<td class=" e dataAreaTop vCC">80.000</td>
+<td class=" e dataAreaTop vCC">23.022</td>
+<td class=" e dataAreaTop vCC">2</td>
+<td class=" e dataAreaTop vCC">80.000</td>
+<td class=" e dataAreaTop vCC">.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC" style="text-align:left;">ta 7</td>
+<td class=" o hCR vCC">.511</td>
+<td class=" o hCR vCC">2</td>
+<td class=" o hCR vCC">2</td>
+<td class=" o hCR vCC">80.000</td>
+<td class=" o hCR vCC">15.771</td>
+<td class=" o hCR vCC">4</td>
+<td class=" o hCR vCC">158.000</td>
+<td class=" o hCR vCC">.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">3</td>
+<td class=" e dataAreaLeft hCR vCC" style="text-align:left;">tp 8</td>
+<td class=" e hCR vCC">.448</td>
+<td class=" e hCR vCC">3</td>
+<td class=" e hCR vCC">2</td>
+<td class=" e hCR vCC">80.000</td>
+<td class=" e hCR vCC">12.836</td>
+<td class=" e hCR vCC">6</td>
+<td class=" e hCR vCC">156.000</td>
+<td class=" e hCR vCC">.000</td>
+</tr>
+</tbody><tfoot>
+<tr>
+<td class="caption" colspan="10">At each step, the variable that minimizes the overall Wilks' Lambda is entered.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="10">a. Maximum number of steps is 90.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="10">b. Minimum partial F to enter is 4.5.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="10">c. Maximum partial F to remove is 3.5.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="10">d. F level, tolerance, or VIN insufficient for further computation.</td>
+</tr>
+<tr>
+<td  style="width:48px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="1" data-NumRows="6" data-NumCols="3" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Tolerance;F to Remove;Wilks' Lambda" data-row-labels="1 st 3;2 st 3; ta 7;3 st 3; ta 7; tp 8" >
+<caption class="title" style="width:354px">Variables in the Analysis<span class="details">Variables in the Analysis, table, 1 levels of column headers and 2 levels of row headers, table with 5 columns and 8 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" colspan="2">Step</td>
+<td class="columnLabels dataAreaLeft vCC role3">Tolerance</td>
+<td class="columnLabels vCC role3">F to Remove</td>
+<td class="columnLabels vCC role3">Wilks' Lambda</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class="rowLabels dataAreaTop vCR role3">st 3</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">1.000</td>
+<td class=" e dataAreaTop vCC">23.022</td>
+<td class=" e dataAreaTop vCC">&nbsp;</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="2">2</td>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">.967</td>
+<td class=" o hCR vCC">15.652</td>
+<td class=" o hCR vCC">.713</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">.967</td>
+<td class=" e hCR vCC">9.586</td>
+<td class=" e hCR vCC">.635</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="3">3</td>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">.955</td>
+<td class=" o hCR vCC">15.331</td>
+<td class=" o hCR vCC">.624</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">.960</td>
+<td class=" e hCR vCC">9.676</td>
+<td class=" e hCR vCC">.559</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">.982</td>
+<td class=" o hCR vCC">5.441</td>
+<td class=" o hCR vCC">.511</td>
+</tr>
+<tr>
+<td  style="width:48px"></td>
+<td  style="width:48px"></td>
+<td  style="width:74px"></td>
+<td  style="width:88px"></td>
+<td  style="width:96px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="1" data-NumRows="174" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Tolerance;Min. Tolerance;F to Enter;Wilks' Lambda" data-row-labels="0 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; st 3; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; ta 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9;1 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; ta 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9;2 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; tp 7; st 8; qt 8; qd 8; ta 8; tp 8; st 9; qt 9; qd 9; ta 9; tp 9;3 st 1; qt 1; qd 1; ta 1; tp 1; st 2; qt 2; qd 2; ta 2; tp 2; qt 3; qd 3; ta 3; tp 3; st 4; qt 4; qd 4; ta 4; tp 4; st 5; qt 5; qd 5; ta 5; tp 5; st 6; qt 6; qd 6; ta 6; tp 6; st 7; qt 7; qd 7; tp 7; st 8; qt 8; qd 8; ta 8; st 9; qt 9; qd 9; ta 9; tp 9" >
+<caption class="title" style="width:433px">Variables Not in the Analysis<span class="details">Variables Not in the Analysis, table, 1 levels of column headers and 2 levels of row headers, table with 6 columns and 176 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" colspan="2">Step</td>
+<td class="columnLabels dataAreaLeft vCC role3">Tolerance</td>
+<td class="columnLabels vCC role3">Min. Tolerance</td>
+<td class="columnLabels vCC role3">F to Enter</td>
+<td class="columnLabels vCC role3">Wilks' Lambda</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" rowspan="45">0</td>
+<td class="rowLabels dataAreaTop vCR role3">st 1</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">1.000</td>
+<td class=" e dataAreaTop vCC">1.000</td>
+<td class=" e dataAreaTop vCC">1.986</td>
+<td class=" e dataAreaTop vCC">.953</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.061</td>
+<td class=" o hCR vCC">.998</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.254</td>
+<td class=" e hCR vCC">.994</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">3.091</td>
+<td class=" o hCR vCC">.928</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.847</td>
+<td class=" e hCR vCC">.979</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">17.190</td>
+<td class=" o hCR vCC">.699</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.088</td>
+<td class=" e hCR vCC">.974</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.511</td>
+<td class=" o hCR vCC">.987</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">13.788</td>
+<td class=" e hCR vCC">.744</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">2.394</td>
+<td class=" o hCR vCC">.944</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">23.022</td>
+<td class=" e hCR vCC">.635</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.367</td>
+<td class=" o hCR vCC">.991</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">3.599</td>
+<td class=" e hCR vCC">.917</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">13.196</td>
+<td class=" o hCR vCC">.752</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.342</td>
+<td class=" e hCR vCC">.968</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">11.387</td>
+<td class=" o hCR vCC">.778</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.317</td>
+<td class=" e hCR vCC">.992</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.486</td>
+<td class=" o hCR vCC">.988</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">10.116</td>
+<td class=" e hCR vCC">.798</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.677</td>
+<td class=" o hCR vCC">.960</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.658</td>
+<td class=" e hCR vCC">.984</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.626</td>
+<td class=" o hCR vCC">.985</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">7.447</td>
+<td class=" e hCR vCC">.843</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">3.351</td>
+<td class=" o hCR vCC">.923</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.473</td>
+<td class=" e hCR vCC">.988</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.651</td>
+<td class=" o hCR vCC">.984</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">3.458</td>
+<td class=" e hCR vCC">.920</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.017</td>
+<td class=" o hCR vCC">.975</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.350</td>
+<td class=" e hCR vCC">.991</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">4.202</td>
+<td class=" o hCR vCC">.905</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">20.662</td>
+<td class=" e hCR vCC">.659</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.307</td>
+<td class=" o hCR vCC">.992</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.673</td>
+<td class=" e hCR vCC">.960</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">16.091</td>
+<td class=" o hCR vCC">.713</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.210</td>
+<td class=" e hCR vCC">.995</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">8.891</td>
+<td class=" o hCR vCC">.818</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.374</td>
+<td class=" e hCR vCC">.991</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">.370</td>
+<td class=" o hCR vCC">.991</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">6.159</td>
+<td class=" e hCR vCC">.867</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">6.064</td>
+<td class=" o hCR vCC">.868</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">11.479</td>
+<td class=" e hCR vCC">.777</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.272</td>
+<td class=" o hCR vCC">.969</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.085</td>
+<td class=" e hCR vCC">.998</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" o dataAreaLeft hCR vCC">1.000</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">11.892</td>
+<td class=" o hCR vCC">.771</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.080</td>
+<td class=" e hCR vCC">.998</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="44">1</td>
+<td class="rowLabels hCR vCR role3">st 1</td>
+<td class=" o dataAreaLeft hCR vCC">.822</td>
+<td class=" o hCR vCC">.822</td>
+<td class=" o hCR vCC">1.594</td>
+<td class=" o hCR vCC">.610</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" e dataAreaLeft hCR vCC">.991</td>
+<td class=" e hCR vCC">.991</td>
+<td class=" e hCR vCC">.315</td>
+<td class=" e hCR vCC">.630</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" o dataAreaLeft hCR vCC">.984</td>
+<td class=" o hCR vCC">.984</td>
+<td class=" o hCR vCC">.034</td>
+<td class=" o hCR vCC">.634</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" e dataAreaLeft hCR vCC">.999</td>
+<td class=" e hCR vCC">.999</td>
+<td class=" e hCR vCC">3.091</td>
+<td class=" e hCR vCC">.589</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" o dataAreaLeft hCR vCC">.984</td>
+<td class=" o hCR vCC">.984</td>
+<td class=" o hCR vCC">1.433</td>
+<td class=" o hCR vCC">.612</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" e dataAreaLeft hCR vCC">.404</td>
+<td class=" e hCR vCC">.404</td>
+<td class=" e hCR vCC">.314</td>
+<td class=" e hCR vCC">.630</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" o dataAreaLeft hCR vCC">.921</td>
+<td class=" o hCR vCC">.921</td>
+<td class=" o hCR vCC">.075</td>
+<td class=" o hCR vCC">.633</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" e dataAreaLeft hCR vCC">.834</td>
+<td class=" e hCR vCC">.834</td>
+<td class=" e hCR vCC">3.105</td>
+<td class=" e hCR vCC">.588</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" o dataAreaLeft hCR vCC">.854</td>
+<td class=" o hCR vCC">.854</td>
+<td class=" o hCR vCC">2.974</td>
+<td class=" o hCR vCC">.590</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" e dataAreaLeft hCR vCC">.915</td>
+<td class=" e hCR vCC">.915</td>
+<td class=" e hCR vCC">3.568</td>
+<td class=" e hCR vCC">.582</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" o dataAreaLeft hCR vCC">.958</td>
+<td class=" o hCR vCC">.958</td>
+<td class=" o hCR vCC">1.599</td>
+<td class=" o hCR vCC">.610</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" e dataAreaLeft hCR vCC">.607</td>
+<td class=" e hCR vCC">.607</td>
+<td class=" e hCR vCC">1.291</td>
+<td class=" e hCR vCC">.615</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" o dataAreaLeft hCR vCC">.839</td>
+<td class=" o hCR vCC">.839</td>
+<td class=" o hCR vCC">2.811</td>
+<td class=" o hCR vCC">.593</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" e dataAreaLeft hCR vCC">.978</td>
+<td class=" e hCR vCC">.978</td>
+<td class=" e hCR vCC">1.885</td>
+<td class=" e hCR vCC">.606</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" o dataAreaLeft hCR vCC">.594</td>
+<td class=" o hCR vCC">.594</td>
+<td class=" o hCR vCC">.177</td>
+<td class=" o hCR vCC">.632</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" e dataAreaLeft hCR vCC">.999</td>
+<td class=" e hCR vCC">.999</td>
+<td class=" e hCR vCC">.183</td>
+<td class=" e hCR vCC">.632</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" o dataAreaLeft hCR vCC">.825</td>
+<td class=" o hCR vCC">.825</td>
+<td class=" o hCR vCC">1.523</td>
+<td class=" o hCR vCC">.611</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" e dataAreaLeft hCR vCC">.728</td>
+<td class=" e hCR vCC">.728</td>
+<td class=" e hCR vCC">1.482</td>
+<td class=" e hCR vCC">.612</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" o dataAreaLeft hCR vCC">.971</td>
+<td class=" o hCR vCC">.971</td>
+<td class=" o hCR vCC">2.624</td>
+<td class=" o hCR vCC">.595</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" e dataAreaLeft hCR vCC">.956</td>
+<td class=" e hCR vCC">.956</td>
+<td class=" e hCR vCC">.040</td>
+<td class=" e hCR vCC">.634</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" o dataAreaLeft hCR vCC">.997</td>
+<td class=" o hCR vCC">.997</td>
+<td class=" o hCR vCC">.382</td>
+<td class=" o hCR vCC">.629</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" e dataAreaLeft hCR vCC">.941</td>
+<td class=" e hCR vCC">.941</td>
+<td class=" e hCR vCC">3.117</td>
+<td class=" e hCR vCC">.588</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" o dataAreaLeft hCR vCC">.954</td>
+<td class=" o hCR vCC">.954</td>
+<td class=" o hCR vCC">.427</td>
+<td class=" o hCR vCC">.628</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" e dataAreaLeft hCR vCC">.962</td>
+<td class=" e hCR vCC">.962</td>
+<td class=" e hCR vCC">.864</td>
+<td class=" e hCR vCC">.621</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" o dataAreaLeft hCR vCC">.989</td>
+<td class=" o hCR vCC">.989</td>
+<td class=" o hCR vCC">.067</td>
+<td class=" o hCR vCC">.634</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" e dataAreaLeft hCR vCC">.976</td>
+<td class=" e hCR vCC">.976</td>
+<td class=" e hCR vCC">.871</td>
+<td class=" e hCR vCC">.621</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" o dataAreaLeft hCR vCC">.996</td>
+<td class=" o hCR vCC">.996</td>
+<td class=" o hCR vCC">.366</td>
+<td class=" o hCR vCC">.629</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" e dataAreaLeft hCR vCC">.948</td>
+<td class=" e hCR vCC">.948</td>
+<td class=" e hCR vCC">1.432</td>
+<td class=" e hCR vCC">.612</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" o dataAreaLeft hCR vCC">.964</td>
+<td class=" o hCR vCC">.964</td>
+<td class=" o hCR vCC">4.555</td>
+<td class=" o hCR vCC">.569</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" e dataAreaLeft hCR vCC">.755</td>
+<td class=" e hCR vCC">.755</td>
+<td class=" e hCR vCC">5.524</td>
+<td class=" e hCR vCC">.557</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" o dataAreaLeft hCR vCC">.993</td>
+<td class=" o hCR vCC">.993</td>
+<td class=" o hCR vCC">.534</td>
+<td class=" o hCR vCC">.626</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" e dataAreaLeft hCR vCC">.999</td>
+<td class=" e hCR vCC">.999</td>
+<td class=" e hCR vCC">.887</td>
+<td class=" e hCR vCC">.621</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" o dataAreaLeft hCR vCC">.967</td>
+<td class=" o hCR vCC">.967</td>
+<td class=" o hCR vCC">9.586</td>
+<td class=" o hCR vCC">.511</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.163</td>
+<td class=" e hCR vCC">.632</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" o dataAreaLeft hCR vCC">.899</td>
+<td class=" o hCR vCC">.899</td>
+<td class=" o hCR vCC">3.591</td>
+<td class=" o hCR vCC">.582</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" e dataAreaLeft hCR vCC">.979</td>
+<td class=" e hCR vCC">.979</td>
+<td class=" e hCR vCC">.167</td>
+<td class=" e hCR vCC">.632</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" o dataAreaLeft hCR vCC">.953</td>
+<td class=" o hCR vCC">.953</td>
+<td class=" o hCR vCC">.561</td>
+<td class=" o hCR vCC">.626</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" e dataAreaLeft hCR vCC">.943</td>
+<td class=" e hCR vCC">.943</td>
+<td class=" e hCR vCC">3.508</td>
+<td class=" e hCR vCC">.583</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">.990</td>
+<td class=" o hCR vCC">.990</td>
+<td class=" o hCR vCC">5.316</td>
+<td class=" o hCR vCC">.559</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" e dataAreaLeft hCR vCC">.813</td>
+<td class=" e hCR vCC">.813</td>
+<td class=" e hCR vCC">4.472</td>
+<td class=" e hCR vCC">.570</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" o dataAreaLeft hCR vCC">.999</td>
+<td class=" o hCR vCC">.999</td>
+<td class=" o hCR vCC">.937</td>
+<td class=" o hCR vCC">.620</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" e dataAreaLeft hCR vCC">.951</td>
+<td class=" e hCR vCC">.951</td>
+<td class=" e hCR vCC">.497</td>
+<td class=" e hCR vCC">.627</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" o dataAreaLeft hCR vCC">.966</td>
+<td class=" o hCR vCC">.966</td>
+<td class=" o hCR vCC">7.874</td>
+<td class=" o hCR vCC">.529</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" e dataAreaLeft hCR vCC">.999</td>
+<td class=" e hCR vCC">.999</td>
+<td class=" e hCR vCC">.029</td>
+<td class=" e hCR vCC">.634</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="43">2</td>
+<td class="rowLabels hCR vCR role3">st 1</td>
+<td class=" o dataAreaLeft hCR vCC">.822</td>
+<td class=" o hCR vCC">.800</td>
+<td class=" o hCR vCC">1.253</td>
+<td class=" o hCR vCC">.495</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" e dataAreaLeft hCR vCC">.988</td>
+<td class=" e hCR vCC">.957</td>
+<td class=" e hCR vCC">.239</td>
+<td class=" e hCR vCC">.508</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" o dataAreaLeft hCR vCC">.966</td>
+<td class=" o hCR vCC">.946</td>
+<td class=" o hCR vCC">.217</td>
+<td class=" o hCR vCC">.508</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" e dataAreaLeft hCR vCC">.997</td>
+<td class=" e hCR vCC">.965</td>
+<td class=" e hCR vCC">2.239</td>
+<td class=" e hCR vCC">.483</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" o dataAreaLeft hCR vCC">.965</td>
+<td class=" o hCR vCC">.945</td>
+<td class=" o hCR vCC">.558</td>
+<td class=" o hCR vCC">.504</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" e dataAreaLeft hCR vCC">.390</td>
+<td class=" e hCR vCC">.390</td>
+<td class=" e hCR vCC">.156</td>
+<td class=" e hCR vCC">.509</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" o dataAreaLeft hCR vCC">.920</td>
+<td class=" o hCR vCC">.895</td>
+<td class=" o hCR vCC">.098</td>
+<td class=" o hCR vCC">.509</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" e dataAreaLeft hCR vCC">.823</td>
+<td class=" e hCR vCC">.797</td>
+<td class=" e hCR vCC">2.994</td>
+<td class=" e hCR vCC">.474</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" o dataAreaLeft hCR vCC">.756</td>
+<td class=" o hCR vCC">.756</td>
+<td class=" o hCR vCC">3.649</td>
+<td class=" o hCR vCC">.467</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" e dataAreaLeft hCR vCC">.915</td>
+<td class=" e hCR vCC">.885</td>
+<td class=" e hCR vCC">3.548</td>
+<td class=" e hCR vCC">.468</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" o dataAreaLeft hCR vCC">.953</td>
+<td class=" o hCR vCC">.923</td>
+<td class=" o hCR vCC">1.099</td>
+<td class=" o hCR vCC">.497</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" e dataAreaLeft hCR vCC">.600</td>
+<td class=" e hCR vCC">.581</td>
+<td class=" e hCR vCC">1.000</td>
+<td class=" e hCR vCC">.498</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" o dataAreaLeft hCR vCC">.786</td>
+<td class=" o hCR vCC">.786</td>
+<td class=" o hCR vCC">3.382</td>
+<td class=" o hCR vCC">.470</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" e dataAreaLeft hCR vCC">.955</td>
+<td class=" e hCR vCC">.938</td>
+<td class=" e hCR vCC">2.391</td>
+<td class=" e hCR vCC">.481</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" o dataAreaLeft hCR vCC">.568</td>
+<td class=" o hCR vCC">.551</td>
+<td class=" o hCR vCC">.506</td>
+<td class=" o hCR vCC">.504</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" e dataAreaLeft hCR vCC">.898</td>
+<td class=" e hCR vCC">.870</td>
+<td class=" e hCR vCC">.762</td>
+<td class=" e hCR vCC">.501</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" o dataAreaLeft hCR vCC">.695</td>
+<td class=" o hCR vCC">.695</td>
+<td class=" o hCR vCC">.755</td>
+<td class=" o hCR vCC">.501</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" e dataAreaLeft hCR vCC">.722</td>
+<td class=" e hCR vCC">.720</td>
+<td class=" e hCR vCC">1.757</td>
+<td class=" e hCR vCC">.489</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" o dataAreaLeft hCR vCC">.955</td>
+<td class=" o hCR vCC">.932</td>
+<td class=" o hCR vCC">2.913</td>
+<td class=" o hCR vCC">.475</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" e dataAreaLeft hCR vCC">.938</td>
+<td class=" e hCR vCC">.915</td>
+<td class=" e hCR vCC">.176</td>
+<td class=" e hCR vCC">.508</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" o dataAreaLeft hCR vCC">.997</td>
+<td class=" o hCR vCC">.965</td>
+<td class=" o hCR vCC">.400</td>
+<td class=" o hCR vCC">.506</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" e dataAreaLeft hCR vCC">.913</td>
+<td class=" e hCR vCC">.896</td>
+<td class=" e hCR vCC">4.313</td>
+<td class=" e hCR vCC">.460</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" o dataAreaLeft hCR vCC">.941</td>
+<td class=" o hCR vCC">.932</td>
+<td class=" o hCR vCC">.275</td>
+<td class=" o hCR vCC">.507</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" e dataAreaLeft hCR vCC">.962</td>
+<td class=" e hCR vCC">.931</td>
+<td class=" e hCR vCC">.854</td>
+<td class=" e hCR vCC">.500</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" o dataAreaLeft hCR vCC">.965</td>
+<td class=" o hCR vCC">.944</td>
+<td class=" o hCR vCC">.209</td>
+<td class=" o hCR vCC">.508</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" e dataAreaLeft hCR vCC">.969</td>
+<td class=" e hCR vCC">.940</td>
+<td class=" e hCR vCC">1.135</td>
+<td class=" e hCR vCC">.496</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" o dataAreaLeft hCR vCC">.965</td>
+<td class=" o hCR vCC">.937</td>
+<td class=" o hCR vCC">1.050</td>
+<td class=" o hCR vCC">.497</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" e dataAreaLeft hCR vCC">.948</td>
+<td class=" e hCR vCC">.917</td>
+<td class=" e hCR vCC">1.077</td>
+<td class=" e hCR vCC">.497</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" o dataAreaLeft hCR vCC">.964</td>
+<td class=" o hCR vCC">.933</td>
+<td class=" o hCR vCC">4.192</td>
+<td class=" o hCR vCC">.461</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" e dataAreaLeft hCR vCC">.717</td>
+<td class=" e hCR vCC">.717</td>
+<td class=" e hCR vCC">2.416</td>
+<td class=" e hCR vCC">.481</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" o dataAreaLeft hCR vCC">.989</td>
+<td class=" o hCR vCC">.963</td>
+<td class=" o hCR vCC">.570</td>
+<td class=" o hCR vCC">.503</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" e dataAreaLeft hCR vCC">.985</td>
+<td class=" e hCR vCC">.953</td>
+<td class=" e hCR vCC">1.205</td>
+<td class=" e hCR vCC">.495</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" o dataAreaLeft hCR vCC">.921</td>
+<td class=" o hCR vCC">.892</td>
+<td class=" o hCR vCC">.220</td>
+<td class=" o hCR vCC">.508</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" e dataAreaLeft hCR vCC">.860</td>
+<td class=" e hCR vCC">.860</td>
+<td class=" e hCR vCC">1.369</td>
+<td class=" e hCR vCC">.493</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" o dataAreaLeft hCR vCC">.940</td>
+<td class=" o hCR vCC">.929</td>
+<td class=" o hCR vCC">.687</td>
+<td class=" o hCR vCC">.502</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" e dataAreaLeft hCR vCC">.927</td>
+<td class=" e hCR vCC">.909</td>
+<td class=" e hCR vCC">.832</td>
+<td class=" e hCR vCC">.500</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" o dataAreaLeft hCR vCC">.897</td>
+<td class=" o hCR vCC">.897</td>
+<td class=" o hCR vCC">1.422</td>
+<td class=" o hCR vCC">.493</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">.982</td>
+<td class=" e hCR vCC">.955</td>
+<td class=" e hCR vCC">5.441</td>
+<td class=" e hCR vCC">.448</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" o dataAreaLeft hCR vCC">.807</td>
+<td class=" o hCR vCC">.800</td>
+<td class=" o hCR vCC">2.828</td>
+<td class=" o hCR vCC">.476</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" e dataAreaLeft hCR vCC">.895</td>
+<td class=" e hCR vCC">.866</td>
+<td class=" e hCR vCC">.010</td>
+<td class=" e hCR vCC">.511</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" o dataAreaLeft hCR vCC">.888</td>
+<td class=" o hCR vCC">.888</td>
+<td class=" o hCR vCC">.246</td>
+<td class=" o hCR vCC">.508</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" e dataAreaLeft hCR vCC">.721</td>
+<td class=" e hCR vCC">.721</td>
+<td class=" e hCR vCC">1.942</td>
+<td class=" e hCR vCC">.487</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" o dataAreaLeft hCR vCC">.981</td>
+<td class=" o hCR vCC">.950</td>
+<td class=" o hCR vCC">.049</td>
+<td class=" o hCR vCC">.510</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="42">3</td>
+<td class="rowLabels hCR vCR role3">st 1</td>
+<td class=" e dataAreaLeft hCR vCC">.818</td>
+<td class=" e hCR vCC">.785</td>
+<td class=" e hCR vCC">.871</td>
+<td class=" e hCR vCC">.438</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 1</td>
+<td class=" o dataAreaLeft hCR vCC">.986</td>
+<td class=" o hCR vCC">.945</td>
+<td class=" o hCR vCC">.221</td>
+<td class=" o hCR vCC">.446</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 1</td>
+<td class=" e dataAreaLeft hCR vCC">.958</td>
+<td class=" e hCR vCC">.936</td>
+<td class=" e hCR vCC">.060</td>
+<td class=" e hCR vCC">.448</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 1</td>
+<td class=" o dataAreaLeft hCR vCC">.976</td>
+<td class=" o hCR vCC">.952</td>
+<td class=" o hCR vCC">1.194</td>
+<td class=" o hCR vCC">.435</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 1</td>
+<td class=" e dataAreaLeft hCR vCC">.965</td>
+<td class=" e hCR vCC">.933</td>
+<td class=" e hCR vCC">.542</td>
+<td class=" e hCR vCC">.442</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 2</td>
+<td class=" o dataAreaLeft hCR vCC">.384</td>
+<td class=" o hCR vCC">.384</td>
+<td class=" o hCR vCC">.073</td>
+<td class=" o hCR vCC">.447</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 2</td>
+<td class=" e dataAreaLeft hCR vCC">.875</td>
+<td class=" e hCR vCC">.868</td>
+<td class=" e hCR vCC">.176</td>
+<td class=" e hCR vCC">.446</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 2</td>
+<td class=" o dataAreaLeft hCR vCC">.823</td>
+<td class=" o hCR vCC">.787</td>
+<td class=" o hCR vCC">2.907</td>
+<td class=" o hCR vCC">.417</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 2</td>
+<td class=" e dataAreaLeft hCR vCC">.590</td>
+<td class=" e hCR vCC">.590</td>
+<td class=" e hCR vCC">2.171</td>
+<td class=" e hCR vCC">.424</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 2</td>
+<td class=" o dataAreaLeft hCR vCC">.775</td>
+<td class=" o hCR vCC">.775</td>
+<td class=" o hCR vCC">2.055</td>
+<td class=" o hCR vCC">.425</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 3</td>
+<td class=" e dataAreaLeft hCR vCC">.924</td>
+<td class=" e hCR vCC">.902</td>
+<td class=" e hCR vCC">1.127</td>
+<td class=" e hCR vCC">.435</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 3</td>
+<td class=" o dataAreaLeft hCR vCC">.598</td>
+<td class=" o hCR vCC">.579</td>
+<td class=" o hCR vCC">.937</td>
+<td class=" o hCR vCC">.438</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 3</td>
+<td class=" e dataAreaLeft hCR vCC">.659</td>
+<td class=" e hCR vCC">.659</td>
+<td class=" e hCR vCC">1.962</td>
+<td class=" e hCR vCC">.426</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 3</td>
+<td class=" o dataAreaLeft hCR vCC">.772</td>
+<td class=" o hCR vCC">.772</td>
+<td class=" o hCR vCC">.838</td>
+<td class=" o hCR vCC">.439</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 4</td>
+<td class=" e dataAreaLeft hCR vCC">.563</td>
+<td class=" e hCR vCC">.550</td>
+<td class=" e hCR vCC">.417</td>
+<td class=" e hCR vCC">.443</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 4</td>
+<td class=" o dataAreaLeft hCR vCC">.783</td>
+<td class=" o hCR vCC">.783</td>
+<td class=" o hCR vCC">2.338</td>
+<td class=" o hCR vCC">.423</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 4</td>
+<td class=" e dataAreaLeft hCR vCC">.683</td>
+<td class=" e hCR vCC">.683</td>
+<td class=" e hCR vCC">.468</td>
+<td class=" e hCR vCC">.443</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 4</td>
+<td class=" o dataAreaLeft hCR vCC">.714</td>
+<td class=" o hCR vCC">.703</td>
+<td class=" o hCR vCC">1.120</td>
+<td class=" o hCR vCC">.436</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 4</td>
+<td class=" e dataAreaLeft hCR vCC">.822</td>
+<td class=" e hCR vCC">.822</td>
+<td class=" e hCR vCC">1.671</td>
+<td class=" e hCR vCC">.430</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 5</td>
+<td class=" o dataAreaLeft hCR vCC">.933</td>
+<td class=" o hCR vCC">.907</td>
+<td class=" o hCR vCC">.054</td>
+<td class=" o hCR vCC">.448</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 5</td>
+<td class=" e dataAreaLeft hCR vCC">.896</td>
+<td class=" e hCR vCC">.883</td>
+<td class=" e hCR vCC">1.720</td>
+<td class=" e hCR vCC">.429</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 5</td>
+<td class=" o dataAreaLeft hCR vCC">.896</td>
+<td class=" o hCR vCC">.892</td>
+<td class=" o hCR vCC">2.883</td>
+<td class=" o hCR vCC">.417</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 5</td>
+<td class=" e dataAreaLeft hCR vCC">.936</td>
+<td class=" e hCR vCC">.917</td>
+<td class=" e hCR vCC">.226</td>
+<td class=" e hCR vCC">.446</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 5</td>
+<td class=" o dataAreaLeft hCR vCC">.754</td>
+<td class=" o hCR vCC">.754</td>
+<td class=" o hCR vCC">.966</td>
+<td class=" o hCR vCC">.437</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 6</td>
+<td class=" e dataAreaLeft hCR vCC">.959</td>
+<td class=" e hCR vCC">.939</td>
+<td class=" e hCR vCC">.061</td>
+<td class=" e hCR vCC">.448</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 6</td>
+<td class=" o dataAreaLeft hCR vCC">.880</td>
+<td class=" o hCR vCC">.880</td>
+<td class=" o hCR vCC">.853</td>
+<td class=" o hCR vCC">.438</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 6</td>
+<td class=" e dataAreaLeft hCR vCC">.951</td>
+<td class=" e hCR vCC">.933</td>
+<td class=" e hCR vCC">.667</td>
+<td class=" e hCR vCC">.441</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 6</td>
+<td class=" o dataAreaLeft hCR vCC">.943</td>
+<td class=" o hCR vCC">.909</td>
+<td class=" o hCR vCC">1.218</td>
+<td class=" o hCR vCC">.434</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 6</td>
+<td class=" e dataAreaLeft hCR vCC">.745</td>
+<td class=" e hCR vCC">.745</td>
+<td class=" e hCR vCC">1.673</td>
+<td class=" e hCR vCC">.430</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 7</td>
+<td class=" o dataAreaLeft hCR vCC">.696</td>
+<td class=" o hCR vCC">.696</td>
+<td class=" o hCR vCC">1.726</td>
+<td class=" o hCR vCC">.429</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 7</td>
+<td class=" e dataAreaLeft hCR vCC">.909</td>
+<td class=" e hCR vCC">.904</td>
+<td class=" e hCR vCC">.826</td>
+<td class=" e hCR vCC">.439</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 7</td>
+<td class=" o dataAreaLeft hCR vCC">.984</td>
+<td class=" o hCR vCC">.945</td>
+<td class=" o hCR vCC">1.209</td>
+<td class=" o hCR vCC">.435</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 7</td>
+<td class=" e dataAreaLeft hCR vCC">.909</td>
+<td class=" e hCR vCC">.889</td>
+<td class=" e hCR vCC">.111</td>
+<td class=" e hCR vCC">.447</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 8</td>
+<td class=" o dataAreaLeft hCR vCC">.847</td>
+<td class=" o hCR vCC">.847</td>
+<td class=" o hCR vCC">1.854</td>
+<td class=" o hCR vCC">.428</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 8</td>
+<td class=" e dataAreaLeft hCR vCC">.866</td>
+<td class=" e hCR vCC">.866</td>
+<td class=" e hCR vCC">.030</td>
+<td class=" e hCR vCC">.448</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 8</td>
+<td class=" o dataAreaLeft hCR vCC">.897</td>
+<td class=" o hCR vCC">.897</td>
+<td class=" o hCR vCC">.318</td>
+<td class=" o hCR vCC">.445</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 8</td>
+<td class=" e dataAreaLeft hCR vCC">.880</td>
+<td class=" e hCR vCC">.880</td>
+<td class=" e hCR vCC">2.022</td>
+<td class=" e hCR vCC">.426</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 9</td>
+<td class=" o dataAreaLeft hCR vCC">.804</td>
+<td class=" o hCR vCC">.787</td>
+<td class=" o hCR vCC">2.895</td>
+<td class=" o hCR vCC">.417</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qt 9</td>
+<td class=" e dataAreaLeft hCR vCC">.892</td>
+<td class=" e hCR vCC">.857</td>
+<td class=" e hCR vCC">.023</td>
+<td class=" e hCR vCC">.448</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">qd 9</td>
+<td class=" o dataAreaLeft hCR vCC">.839</td>
+<td class=" o hCR vCC">.839</td>
+<td class=" o hCR vCC">.912</td>
+<td class=" o hCR vCC">.438</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">ta 9</td>
+<td class=" e dataAreaLeft hCR vCC">.703</td>
+<td class=" e hCR vCC">.703</td>
+<td class=" e hCR vCC">2.770</td>
+<td class=" e hCR vCC">.418</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 9</td>
+<td class=" o dataAreaLeft hCR vCC">.981</td>
+<td class=" o hCR vCC">.943</td>
+<td class=" o hCR vCC">.030</td>
+<td class=" o hCR vCC">.448</td>
+</tr>
+<tr>
+<td  style="width:48px"></td>
+<td  style="width:48px"></td>
+<td  style="width:74px"></td>
+<td  style="width:96px"></td>
+<td  style="width:71px"></td>
+<td  style="width:96px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="3" data-NumCols="9" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Number of Variables ;Lambda ;df1 ;df2 ;df3 ;Exact F Statistic; df1; df2; Sig." data-row-labels="1;2;3" >
+<caption class="title" style="width:680px">Wilks' Lambda<span class="details">Wilks' Lambda, table, 2 levels of column headers and 1 levels of row headers, table with 10 columns and 6 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">Step</td>
+<td class="columnLabels dataAreaLeft hCC vCC role3" rowspan="2">Number of Variables</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">Lambda</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">df1</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">df2</td>
+<td class="columnLabels hDC vCC role3" rowspan="2">df3</td>
+<td class="columnLabels hCC vCC role2" colspan="4">Exact F</td>
+</tr>
+<tr>
+<td class="columnLabels vCC role3">Statistic</td>
+<td class="columnLabels vCC role3">df1</td>
+<td class="columnLabels vCC role3">df2</td>
+<td class="columnLabels vCC role3">Sig.</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">1</td>
+<td class=" o dataAreaTop vCC">.635</td>
+<td class=" o dataAreaTop vCC">1</td>
+<td class=" o dataAreaTop vCC">2</td>
+<td class=" o dataAreaTop vCC">80</td>
+<td class=" o dataAreaTop vCC">23.022</td>
+<td class=" o dataAreaTop vCC">2</td>
+<td class=" o dataAreaTop vCC">80.000</td>
+<td class=" o dataAreaTop vCC">.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">2</td>
+<td class=" e hCR vCC">.511</td>
+<td class=" e hCR vCC">2</td>
+<td class=" e hCR vCC">2</td>
+<td class=" e hCR vCC">80</td>
+<td class=" e hCR vCC">15.771</td>
+<td class=" e hCR vCC">4</td>
+<td class=" e hCR vCC">158.000</td>
+<td class=" e hCR vCC">.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">3</td>
+<td class=" o hCR vCC">.448</td>
+<td class=" o hCR vCC">3</td>
+<td class=" o hCR vCC">2</td>
+<td class=" o hCR vCC">80</td>
+<td class=" o hCR vCC">12.836</td>
+<td class=" o hCR vCC">6</td>
+<td class=" o hCR vCC">156.000</td>
+<td class=" o hCR vCC">.000</td>
+</tr>
+<tr>
+<td  style="width:48px"></td>
+<td  style="width:96px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tbody>
+</table>
+</div><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Summary&nbsp;of&nbsp;Canonical&nbsp;Discriminant&nbsp;Functions</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="1" data-NumRows="2" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Eigenvalue;% of Variance;Cumulative %;Canonical Correlation" data-row-labels="1;2" >
+<caption class="title" style="width:431px">Eigenvalues<span class="details">Eigenvalues, table, 1 levels of column headers and 1 levels of row headers, table with 5 columns and 5 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels">Function</td>
+<td class="columnLabels dataAreaLeft vCC role3">Eigenvalue</td>
+<td class="columnLabels vCC role3">% of Variance</td>
+<td class="columnLabels vCC role3">Cumulative %</td>
+<td class="columnLabels vCC role3">Canonical Correlation</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" e dataAreaTop dataAreaLeft vCC" title="a. First 2 canonical discriminant functions were used in the analysis.">.797<sup>a</sup></td>
+<td class=" e dataAreaTop vCC">76.8</td>
+<td class=" e dataAreaTop vCC">76.8</td>
+<td class=" e dataAreaTop vCC">.666</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC" title="a. First 2 canonical discriminant functions were used in the analysis.">.241<sup>a</sup></td>
+<td class=" o hCR vCC">23.2</td>
+<td class=" o hCR vCC">100.0</td>
+<td class=" o hCR vCC">.441</td>
+</tr>
+</tbody><tfoot>
+<tr>
+<td class="footnotes" colspan="5">a. First 2 canonical discriminant functions were used in the analysis.</td>
+</tr>
+<tr>
+<td  style="width:66px"></td>
+<td  style="width:80px"></td>
+<td  style="width:94px"></td>
+<td  style="width:95px"></td>
+<td  style="width:96px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="1" data-NumRows="2" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Wilks' Lambda;Chi-square;df;Sig." data-row-labels="1 through 2;2" >
+<caption class="title" style="width:432px">Wilks' Lambda<span class="details">Wilks' Lambda, table, 1 levels of column headers and 1 levels of row headers, table with 5 columns and 4 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels">Test of Function(s)</td>
+<td class="columnLabels dataAreaLeft vCC role3">Wilks' Lambda</td>
+<td class="columnLabels vCC role3">Chi-square</td>
+<td class="columnLabels vCC role3">df</td>
+<td class="columnLabels vCC role3">Sig.</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1 through 2</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">.448</td>
+<td class=" e dataAreaTop vCC">63.397</td>
+<td class=" e dataAreaTop vCC">6</td>
+<td class=" e dataAreaTop vCC">.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC">.806</td>
+<td class=" o hCR vCC">17.073</td>
+<td class=" o hCR vCC">2</td>
+<td class=" o hCR vCC">.000</td>
+</tr>
+<tr>
+<td  style="width:121px"></td>
+<td  style="width:96px"></td>
+<td  style="width:81px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="3" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="st 3;ta 7;tp 8" >
+<caption class="title" style="width:182px">Standardized Canonical Discriminant Function Coefficients<span class="details">Standardized Canonical Discriminant Function Coefficients, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 6 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">st 3</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">.659</td>
+<td class=" o dataAreaTop vCC">.727</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">.581</td>
+<td class=" e hCR vCC">-.543</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-.274</td>
+<td class=" o hCR vCC">.685</td>
+</tr>
+<tr>
+<td  style="width:48px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="45" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="st 3;ta 7;st 2;st 7;qd 3;st 4;ta 4;ta 9;st 9;ta 2;st 8;tp 2;st 1;tp 6;tp 5;ta 8;ta 5;qt 9;ta 6;qt 7;tp 4;qt 6;tp 3;st 6;tp 7;qd 5;qd 8;tp 9;qt 8;tp 8;qt 4;qd 9;ta 3;qd 4;qt 2;qd 2;qt 3;qt 5;ta 1;st 5;tp 1;qd 7;qd 1;qt 1;qd 6" >
+<caption class="title" style="width:183px">Structure Matrix<span class="details">Structure Matrix, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 51 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">st 3</td>
+<td class=" o dataAreaTop dataAreaLeft vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.792<sup>*</sup></td>
+<td class=" o dataAreaTop vCC">.561</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.681<sup>*</sup></td>
+<td class=" e hCR vCC">-.364</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 2<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.654<sup>*</sup></td>
+<td class=" o hCR vCC">.431</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 7<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.538<sup>*</sup></td>
+<td class=" e hCR vCC">.088</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 3<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.462<sup>*</sup></td>
+<td class=" o hCR vCC">.360</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 4<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.434<sup>*</sup></td>
+<td class=" e hCR vCC">.386</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 4<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.433<sup>*</sup></td>
+<td class=" o hCR vCC">.314</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 9<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.381<sup>*</sup></td>
+<td class=" e hCR vCC">.039</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 9<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.371<sup>*</sup></td>
+<td class=" o hCR vCC">-.241</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 2<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.363<sup>*</sup></td>
+<td class=" e hCR vCC">.344</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 8<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.329<sup>*</sup></td>
+<td class=" o hCR vCC">-.161</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 2<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.316<sup>*</sup></td>
+<td class=" e hCR vCC">.077</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 1<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.315<sup>*</sup></td>
+<td class=" o hCR vCC">.282</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 6<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.275<sup>*</sup></td>
+<td class=" e hCR vCC">.210</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 5<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.274<sup>*</sup></td>
+<td class=" o hCR vCC">.197</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 8<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.271<sup>*</sup></td>
+<td class=" e hCR vCC">-.120</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 5<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.214<sup>*</sup></td>
+<td class=" o hCR vCC">.111</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 9<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.212<sup>*</sup></td>
+<td class=" e hCR vCC">-.176</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 6<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.187<sup>*</sup></td>
+<td class=" o hCR vCC">-.090</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 7<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.179<sup>*</sup></td>
+<td class=" e hCR vCC">.177</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 4<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.164<sup>*</sup></td>
+<td class=" o hCR vCC">.093</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 6<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.157<sup>*</sup></td>
+<td class=" e hCR vCC">.076</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 3<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.152<sup>*</sup></td>
+<td class=" o hCR vCC">.136</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 6<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.144<sup>*</sup></td>
+<td class=" e hCR vCC">-.042</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 7<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.138<sup>*</sup></td>
+<td class=" o hCR vCC">-.048</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 5<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.138<sup>*</sup></td>
+<td class=" e hCR vCC">.124</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 8<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.132<sup>*</sup></td>
+<td class=" o hCR vCC">.079</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 9<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.090<sup>*</sup></td>
+<td class=" e hCR vCC">-.031</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 8<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.079<sup>*</sup></td>
+<td class=" o hCR vCC">.010</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">-.300</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.576<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 4<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">-.241</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.399<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 9<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">-.021</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.393<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 3<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">.347</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.357<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 4<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">.163</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.332<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 2<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">-.178</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.291<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 2<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">.261</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.285<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 3<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">-.075</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.265<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 5<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">-.141</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.197<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">ta 1<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">-.042</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.140<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">st 5<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">.113</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.132<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">tp 1<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">-.027</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.132<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 7<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">-.053</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.087<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 1<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">.050</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.076<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qt 1<sup>b</sup></td>
+<td class=" e dataAreaLeft hCR vCC">-.054</td>
+<td class=" e hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">-.058<sup>*</sup></td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" title="b. This variable not used in the analysis.">qd 6<sup>b</sup></td>
+<td class=" o dataAreaLeft hCR vCC">-.014</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.037<sup>*</sup></td>
+</tr>
+</tbody><tfoot>
+<tr>
+<td class="caption" colspan="3">Pooled within-groups correlations between discriminating variables and standardized canonical discriminant functions <br> Variables ordered by absolute size of correlation within function.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="3">*. Largest absolute correlation between each variable and any discriminant function</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="3">b. This variable not used in the analysis.</td>
+</tr>
+<tr>
+<td  style="width:49px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="4" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="st 3;ta 7;tp 8;(Constant)" >
+<caption class="title" style="width:211px">Canonical Discriminant Function Coefficients<span class="details">Canonical Discriminant Function Coefficients, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 8 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">st 3</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">.015</td>
+<td class=" o dataAreaTop vCC">.017</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">.066</td>
+<td class=" e hCR vCC">-.062</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-.025</td>
+<td class=" o hCR vCC">.062</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">(Constant)</td>
+<td class=" e dataAreaLeft hCR vCC">-.109</td>
+<td class=" e hCR vCC">-.113</td>
+</tr>
+</tbody><tfoot>
+<tr>
+<td class="caption" colspan="3">Unstandardized coefficients</td>
+</tr>
+<tr>
+<td  style="width:77px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="3" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="1;2;3" >
+<caption class="title" style="width:192px">Functions at Group Centroids<span class="details">Functions at Group Centroids, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 7 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">1.166</td>
+<td class=" o dataAreaTop vCC">.266</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">-.844</td>
+<td class=" e hCR vCC">.245</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">.032</td>
+<td class=" o hCR vCC">-.916</td>
+</tr>
+</tbody><tfoot>
+<tr>
+<td class="caption" colspan="3">Unstandardized canonical discriminant functions evaluated at group means</td>
+</tr>
+<tr>
+<td  style="width:58px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tfoot>
+</table>
+</div><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Classification&nbsp;Statistics</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="0" data-NumRows="4" data-NumCols="1" data-rowLabels="Corner" data-decimal-char="." data-col-labels="" data-row-labels="Processed ;Excluded Missing or out-of-range group codes; At least one missing discriminating variable;Used in Output " >
+<caption class="title" style="width:296px">Classification Processing Summary<span class="details">Classification Processing Summary, table, 0 levels of column headers and 2 levels of row headers, table with 3 columns and 5 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="rowLabels dataAreaTop role3" colspan="2">Processed</td>
+<td class=" o dataAreaTop dataAreaLeft">83</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role2" rowspan="2">Excluded</td>
+<td class="rowLabels hCR vCR role3">Missing or out-of-range group codes</td>
+<td class=" e dataAreaLeft hCR">0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">At least one missing discriminating variable</td>
+<td class=" o dataAreaLeft hCR">0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" colspan="2">Used in Output</td>
+<td class=" e dataAreaLeft hCR">83</td>
+</tr>
+<tr>
+<td  style="width:69px"></td>
+<td  style="width:160px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="4" data-NumCols="3" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Prior ;Cases Used in Analysis Unweighted; Weighted" data-row-labels="1;2;3;Total" >
+<caption class="title" style="width:286px">Prior Probabilities for Groups<span class="details">Prior Probabilities for Groups, table, 2 levels of column headers and 1 levels of row headers, table with 4 columns and 7 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hDC vCC role3" rowspan="2">Prior</td>
+<td class="columnLabels hCC vCC role2" colspan="2">Cases Used in Analysis</td>
+</tr>
+<tr>
+<td class="columnLabels vCC role3">Unweighted</td>
+<td class="columnLabels vCC role3">Weighted</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">.325</td>
+<td class=" o dataAreaTop vCC">27</td>
+<td class=" o dataAreaTop vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">.458</td>
+<td class=" e hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">.217</td>
+<td class=" o hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">Total</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td  style="width:58px"></td>
+<td  style="width:67px"></td>
+<td  style="width:85px"></td>
+<td  style="width:76px"></td>
+</tr>
+</tbody>
+</table>
+</div><div><img title="All-Groups Scatter Plot" src="data:image/jpg;base64,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of8ApXNW9WD4Q/5Ak/8A2E9Q/wDSuat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P8A69Lz+cNdRXL3H/I9aH/16Xn84a6S4uIbWB57iVIokGWd2AA+pNAElFUbPWNPv5TFbXSPLjdsOVYj1AOCR7ir1NprRhc5zxhcRWMGl6lJdWtu9nfCSM3btHAzGKSMq8gVvLG12wxGNwUdxWV4M0y7l/szWJWh8oLqudoZd/2i9WWN0BH3SqE8nPzL15x3FFIDhV8F6jcaG2k3U9rFFbaJcaLaTRO0jSJKsa+ZIpUbSBEvygtnJ5qpr+na95N7qmoJpsVxdT6LbQRQSvKitHf7iWLKpIJlB4HqO2T6LRQBx934Zv73Sr03Fpp095e363sts1zKiR7YkiAjnRQ6tiNTv292GOcjc8O2V/p+g2trqdz9pu4w2+Tez4BYlV3sAX2qQu4gFsZPJrUooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOS8If8gSf/sJ6h/6VzVvVg+EP+QJP/wBhPUP/AErmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/AJHrQ/8Ar0vP5w1o6iEbX9KW4x9nxKUDdDONuz8dvmEfSs64/wCR60P/AK9Lz+cNbOrGCS3W1mtRdtOcJAcckc5J7Adc9uMc4pxkou7Jk0ldlfxGE/s6Nxj7Us8f2Uj73mbgBj8M59s9qpSNfRfEayR7+R7K40y6dbQKFRCklsAx7s3zvyegOAByTJaWaaXdxT3ViAWIjS4+1yXHlFuAP3nKg8DI/HFT3Gu6JBrsVrO4/tBSLdZfszssZk2kRmULtQthDtLAn5eDxQ5JqyFGSZs0UUUiwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK5nXfFT6Zrtro9qmltdTReb/xMNR+yg5baipiNy7EhuMD7vvXTVia9o19rMU1o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yr6Cr9FAFSbStOubGSxnsLWW0lZnkgeFWjdmYsxKkYJLEsT3JzTJNF0qW3a3k0yyeF40haNoFKlEJKKRjG1SzEDoMnHWr1FAEVvbQWkXlW8McMe5n2RqFG5iWY4Hckkk9ySaloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkvCH/IEn/wCwnqH/AKVzVvVg+EP+QJP/ANhPUP8A0rmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/ketD/AOvS8/nDXUVy9x/yPWh/9el5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkvCH/IEn/7Ceof+lc1b1YPhD/kCT/9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAorJuHhk1GeO9u3gREUxKJjECO7ZBGTnj2x71b0ySSbT43lZmJLAOwwXUMQrH6jB/GpUruxnGpeXKW6KKKo0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA53UV0/+2JjrUYeHyl+zGVC0Y67sej5x74xitLRBMNIhE/mhstsEv3xHuOzdnnO3bnPOa0KKuU7xsJLW4UUUVAwooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P/r0vP5w11Fcvcf8AI9aH/wBel5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK4Tx3L4Va7Sy1S80+11i4t8W1zeXCxmzTcf3yFiArgk42/MxAB+UEju6KAOK8bppGoXFjHf6rosUdrLJug1W1+0QNMUTAb51CuEfKqTkh8gHFWLfSNY1LTdPurLXLzw/C9pCRpcFpbMlsdgyg3xkjHTHbHautooA43wPHJD4aMU07Typf3yvM6gGQi7lyxAAAJ68ACujrB8If8AIEn/AOwnqH/pXNW9QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA140kA3orY5G4ZxTqKKACiiigAooooAKKKKACiiigAooooAKKKK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RQAUUUUAFFFFABRRRQAUUUUAFFFFABRUbTRoxDNgjrx0+vpUlK6AKKKKYCMoZSGAIPUGkSNIwQigZ9KdRRYAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAMa4/5HrQ/+vS8/nDXUVy9x/wAj1of/AF6Xn84a6igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOS8If8gSf/ALCeof8ApXNW9WD4Q/5Ak/8A2E9Q/wDSuat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAgxJGXCxhwxyDnH51LGnlxImc7QBmnUUlGwBRRRTAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/ketD/AOvS8/nDXUVy9x/yPWh/9el5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkvCH/IEn/7Ceof+lc1b1YPhD/kCT/9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P/r0vP5w11Fcvcf8AI9aH/wBel5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkvCH/IEn/wCwnqH/AKVzVvVg+EP+QJP/ANhPUP8A0rmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/ketD/AOvS8/nDXUVy9x/yPWh/9el5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK5XxJrmpafq0NtbTRWNmIDLNe3Olz3UQYtgAtG6LGAFYsWOBleldNPBDdW8tvcRRzQSoUkjkUMrqRggg8EEcYrEufCNhLbCytZZtP0xomgm0+zWNLeWNixZShU7c7myU2k55PAwAO1u/1RdWsdK0h7OK5uIJ7lpLuJpE2xGNdoCspyTKvOeADwaz7fxjf3Gm6feW/hTVbyO7tIbkS2zwbPnQNtG+RTxnHStPVPDx1O5W5XVtQs7iPesctt5QaON1QPGNyH5SUDZOWB6EAADTsrODTrC2srZNkFvEsMa+iqAAPyFAHKeB5Xn8NGaSF4Hkv75mikxujJu5TtOCRkdOCRXR1g+EP+QJP/wBhPUP/AErmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/AJHrQ/8Ar0vP5w11Fcvcf8j1of8A16Xn84a6igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOS8If8AIEn/AOwnqH/pXNW9WD4Q/wCQJP8A9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P/r0vP5w11Fcvcf8j1of/XpefzhrqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA5Lwh/yBJ/+wnqH/pXNW9WD4Q/5Ak//AGE9Q/8ASuat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP8AketD/wCvS8/nDXUVy9x/yPWh/wDXpefzhrqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA4Lwzr2j2WmXNvdatYwTJqd/ujluEVlzdykZBOehrZ/4Sjw//ANB3TP8AwLj/AMa1JNB0aaV5ZdJsHkcl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ghitreOCFFjiiUIiKMBVAwAKAJKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAjnnhtbeW4uJY4YIkLySSMFVFAySSeAAOc1l2Pizw3qd5HZ2HiDSru6kzshgvY5HbAJOFBycAE/hVfx3/yTzxL/ANgq6/8ARTVxfwp8NalbWWkapqGieEYrQ6ZG9pd2Fqy3xZkXBkcjGShbcQeSfTNAHqlFeOaZ49124+H/AICv5dVRtT1XX47O8byow0sHnSKy7duF4EYyADyOeaz9U8X+OrbSfFniSDXrYafoWvS2aWT2SFpoxKiBC+BgAOuD94/Nk9KAPc6jnnhtbeW4uJY4YIkLySSMFVFAySSeAAOc15nrvifxHL431i003XNJ0fT9BFo0sepKqx3nncndKclAB8o2jrj1rn7lPEMXjD4pXDeIvNtdPsPMezmso5EmR7WZ4o8NkKI8jPBD4O4cmgD2yCeG6t4ri3ljmglQPHJGwZXUjIII4II5zUlePDxH4jvovCnh/RtXsNDeTw1Fqk13LaxlHIUDy1TAVQMEnA4Xp0xTU8a+K/Elv8PV0q/g0q516O9F2z2yypmED5wp57MwAIGSM5FAHsdV5b+zt7y3tJruCO5ud3kQvIA8u0Zbap5bA5OOlcn8Ndb1fWNJ1eDW7qO7vdL1a405rlIhH5oj2/MVHA+8entXN6roT6Z8cPB2oXGo3N7c38upNmU4SGJYcxxIo4AUMeepJyaAPWKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCvf2NvqenXNheR+Za3UTwzJuI3IwIYZHIyCelFhY2+madbWFnH5draxJDCm4naigBRk8nAA61YooA5CH4W+CrbU01KDQYY7xLpLtJElkG2VTkEDdgDPO37p4yOBV+bwT4duNH1TSZdP3WOq3bXt7F50g82YsrFs7sryinAIHHSugooAwNW8EeG9d1m11fU9Igub+2x5UrFh0ORuAOGwf7wNMv/AnhrU9ZudXu9LV7+5t3tZpllkQyRshjYEKwH3TjOM9OeBXRUUAc1qnw/8AC2taZp+najpEU9tp0aw2oMjho0UABdwO4jAHUnOOav8A/CM6N9s0i6WxRJdHSRLDy2ZVgV1CMAoODlQByDjtWtRQBn6VomnaJ9t/s638n7ddyXtx87NvmfG5uScZwOBge1F3omnX2sadq1zb777TfN+yS72Hl+Yu1+AcHIGOQcdq0KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q=="></div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:bold;
+padding-bottom:6pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .layers{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .cornerLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .columnLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:center;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:bottom;
+font-size:9pt;
+}
+.Default .rowLabels{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .o, .Default .e{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:right;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:middle;
+font-size:9pt;
+}
+.Default .o{
+color:null;
+background-color:null;
+}
+.Default .e{
+color:#000000;
+background-color:;
+}
+.Default .caption{
+padding-right:8pt;
+font-family:sans-serif;
+padding-left:6pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:1pt;
+padding-top:1pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .footnotes{
+padding-right:6pt;
+font-family:sans-serif;
+padding-left:8pt;
+color:#000000;
+text-align:left;
+font-weight:normal;
+padding-bottom:3pt;
+padding-top:2pt;
+vertical-align:top;
+font-size:9pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #000000;
+}
+.Default .innerFrameBd{
+border-top:2px solid #000000;
+border-left:2px solid #000000;
+border-right:2px solid #000000;
+border-bottom:2px solid #000000;
+}
+.Default .dataAreaLeft{
+border-left:2px solid #000000;
+}
+.Default .dataAreaTop{
+border-top:2px solid #000000;
+}
+.Default .hCR{
+border-top:1px none #000000;
+}
+.Default .hDR{
+border-top:1px solid #000000;
+}
+.Default .vCR{
+border-left:1px none #000000;
+}
+.Default .vDR{
+border-left:1px none #000000;
+}
+.Default .hCC{
+border-bottom:1px solid #000000;
+}
+.Default .hDC{
+border-bottom:1px solid #000000;
+}
+.Default .vCC{
+border-right:1px solid #000000;
+}
+.Default .vDC{
+border-right:1px solid #000000;
+}
+</style>
+</div>
+<div class="itemBody">
+<table class="Default PivotTable" data-lookName="Default" data-rowLabelWidth="3" data-colLabelHeight="2" data-NumRows="12" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Predicted Group Membership 1; 2; 3;Total " data-row-labels="Original Count 1;  2;  3; % 1;  2;  3;Cross-validated Count 1;  2;  3; % 1;  2;  3" >
+<caption class="title" style="width:490px" title="a. 75.9% of original grouped cases correctly classified.
+c. 69.9% of cross-validated grouped cases correctly classified.">Classification Results<sup>a,c</sup><span class="details">Classification Results, table, 2 levels of column headers and 3 levels of row headers, table with 7 columns and 18 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="cornerLabels" rowspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hCC vCC role2" colspan="3">Predicted Group Membership</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">Total</td>
+</tr>
+<tr>
+<td  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+<td class="columnLabels vCC role3">3</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" rowspan="6">Original</td>
+<td class="rowLabels dataAreaTop vCR role3" rowspan="3">Count</td>
+<td class="rowLabels dataAreaTop vCR role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">18</td>
+<td class=" o dataAreaTop vCC">8</td>
+<td class=" o dataAreaTop vCC">1</td>
+<td class=" o dataAreaTop vCC">27</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">0</td>
+<td class=" e hCR vCC">37</td>
+<td class=" e hCR vCC">1</td>
+<td class=" e hCR vCC">38</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">1</td>
+<td class=" o hCR vCC">9</td>
+<td class=" o hCR vCC">8</td>
+<td class=" o hCR vCC">18</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3" rowspan="3">%</td>
+<td class="rowLabels hCR vCR role3">1</td>
+<td class=" e dataAreaLeft hCR vCC">66.7</td>
+<td class=" e hCR vCC">29.6</td>
+<td class=" e hCR vCC">3.7</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC">.0</td>
+<td class=" o hCR vCC">97.4</td>
+<td class=" o hCR vCC">2.6</td>
+<td class=" o hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" e dataAreaLeft hCR vCC">5.6</td>
+<td class=" e hCR vCC">50.0</td>
+<td class=" e hCR vCC">44.4</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="6" title="b. Cross validation is done only for those cases in the analysis. In cross validation, each case is classified by the functions derived from all cases other than that case.">Cross-validated<sup>b</sup></td>
+<td class="rowLabels hCR vCR role3" rowspan="3">Count</td>
+<td class="rowLabels hCR vCR role3">1</td>
+<td class=" o dataAreaLeft hCR vCC">16</td>
+<td class=" o hCR vCC">8</td>
+<td class=" o hCR vCC">3</td>
+<td class=" o hCR vCC">27</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">0</td>
+<td class=" e hCR vCC">37</td>
+<td class=" e hCR vCC">1</td>
+<td class=" e hCR vCC">38</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">2</td>
+<td class=" o hCR vCC">11</td>
+<td class=" o hCR vCC">5</td>
+<td class=" o hCR vCC">18</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3" rowspan="3">%</td>
+<td class="rowLabels hCR vCR role3">1</td>
+<td class=" e dataAreaLeft hCR vCC">59.3</td>
+<td class=" e hCR vCC">29.6</td>
+<td class=" e hCR vCC">11.1</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC">.0</td>
+<td class=" o hCR vCC">97.4</td>
+<td class=" o hCR vCC">2.6</td>
+<td class=" o hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" e dataAreaLeft hCR vCC">11.1</td>
+<td class=" e hCR vCC">61.1</td>
+<td class=" e hCR vCC">27.8</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+</tbody><tfoot>
+<tr>
+<td class="footnotes" colspan="7">a. 75.9% of original grouped cases correctly classified.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="7">b. Cross validation is done only for those cases in the analysis. In cross validation, each case is classified by the functions derived from all cases other than that case.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="7">c. 69.9% of cross-validated grouped cases correctly classified.</td>
+</tr>
+<tr>
+<td  style="width:112px"></td>
+<td  style="width:52px"></td>
+<td  style="width:58px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+<td  style="width:67px"></td>
+</tr>
+</tfoot>
+</table>
+</div><p align="left"><head><style type="text/css">p{color:0;font-family:Monospaced;font-size:14pt;font-style:normal;font-weight:normal;text-decoration:none}</style></head><BR>
+OUTPUT EXPORT /CONTENTS EXPORT=VISIBLE/HTML DOCUMENTFILE="C:\Users\Jorge\GDrive\Universidad\BSICOS\Project\Candidates2Params(NonFiltered)\Wilks_ICS.htm".</p><BR></body></html>
