@@ -1,4 +1,4 @@
-function create_data_matrixes(icsdir, output)
+function create_data_matrixes_v1v2(icsdir, normalicsdir, output)
 %This function edits the original measurements to create a bigger matrix of
 %data containing just the values of the indexes at the end of the occlusion
 %and just the 9 original leads of the database. It also creates the
@@ -12,10 +12,11 @@ data_matrix_ICS.vars = zeros(83,45);
 mkdir(output)
 
 for h = 1:83
-    load([icsdir 'ics' lista(h,:)])
-    load([icsdir 'delta_indexes' lista(h,:)])
     
-    for g = 1:9
+    load([normalicsdir 'ics' lista(h,:)])
+    load([normalicsdir 'delta_indexes' lista(h,:)])
+    
+    for g = 1:10
         if (g<7)
             data_matrix_delta.vars(h,(g-1)*5+1) = delt_st(g,end);
             data_matrix_delta.vars(h,(g-1)*5+2) = delt_qt(g,end);
@@ -64,6 +65,21 @@ for h = 1:83
             data_matrix_ICS.vars(h,(g-1)*5+3) = fa_qd(12,end);
             data_matrix_ICS.vars(h,(g-1)*5+4) = fa_ta(12,end);
             data_matrix_ICS.vars(h,(g-1)*5+5) = fa_tp(12,end);
+        elseif (g == 10)
+            load([icsdir 'ics' lista(h,:)])
+            load([icsdir 'delta_indexes' lista(h,:)])
+            
+            data_matrix_delta.vars(h,(g-1)*5+1) = delt_st(12,end);
+            data_matrix_delta.vars(h,(g-1)*5+2) = delt_qt(1,end);
+            data_matrix_delta.vars(h,(g-1)*5+3) = delt_qd(1,end);
+            data_matrix_delta.vars(h,(g-1)*5+4) = delt_ta(1,end);
+            data_matrix_delta.vars(h,(g-1)*5+5) = delt_tp(1,end);
+            
+            data_matrix_ICS.vars(h,(g-1)*5+1) = fa_st(1,end);
+            data_matrix_ICS.vars(h,(g-1)*5+2) = fa_qt(1,end);
+            data_matrix_ICS.vars(h,(g-1)*5+3) = fa_qd(1,end);
+            data_matrix_ICS.vars(h,(g-1)*5+4) = fa_ta(1,end);
+            data_matrix_ICS.vars(h,(g-1)*5+5) = fa_tp(1,end);
         end
     end
 end
@@ -97,16 +113,9 @@ groups = a+b+c;
 save('var_dependencies\groups_num', 'groups')
 
 %%Creating data for using spss program of statistics
-if (size(delt_st,1)-3)==9
-    load('var_dependencies\leaflet9')
-    prepared_data_spss_ics = [leafletvar "groups"; data_matrix_ICS.vars groups];
-    prepared_data_spss_delta = [leafletvar "groups"; data_matrix_delta.vars groups];
-
-elseif (size(delt_st,1)-3)==10
-    load('var_dependencies\leaflet10')
-    prepared_data_spss_ics = [leafletvar "groups"; data_matrix_ICS.vars groups];
-    prepared_data_spss_delta = [leafletvar "groups"; data_matrix_delta.vars groups];
-end
+load('var_dependencies\leaflet10')
+prepared_data_spss_ics = [leafletvar "groups"; data_matrix_ICS.vars groups];
+prepared_data_spss_delta = [leafletvar "groups"; data_matrix_delta.vars groups];
 
 xlswrite([output 'data_spss_ics.xlsx'], prepared_data_spss_ics);
 xlswrite([output 'data_spss_delta.xlsx'],prepared_data_spss_delta);
