@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3Vars_Josechu_ICS(60HzFiltered).htm</title>
+<meta charset="utf-8"/>
+<style type="text/css">.details{position: absolute;left: -9999px;}
+.IELargeImage{display:inline-block;font-family: Arial, Helvetica, sans-serif;font-size: medium;color:#ff0000;font-weight:normal;vertical-align:middle;}</style></head>
+<body>
+<p align="left"><head><style type="text/css">p{color:0;font-family:Monospaced;font-size:14pt;font-style:normal;font-weight:normal;text-decoration:none}</style></head><BR><BR>DATASET CLOSE DataSet1 .<BR><BR><BR>GET DATA /TYPE=XLSX<BR>  /FILE='C:\Users\Jorge\GDrive\Universidad\BSICOS\Project\Candidates2Params(60HzFiltered)\data_spss_ics.xlsx'<BR>  /SHEET=name 'Sheet1'<BR>  /READNAMES=on<BR>  /ASSUMEDSTRWIDTH=32767.<BR>DATASET NAME DataSet1 WINDOW=FRONT.<BR><BR>DISCRIMINANT<BR>  /GROUPS=groups(1 3)<BR>  /VARIABLES=ta7 st3 tp8<BR>  /ANALYSIS ALL<BR>  /PRIORS SIZE<BR>  /STATISTICS=MEAN STDDEV RAW CORR CROSSVALID<BR>  /PLOT=COMBINED<BR>  /CLASSIFY=NONMISSING POOLED.</p><BR><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Discriminant</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Analysis Case Processing Summary, table, 1 levels of column headers and 2 levels of row headers, table with 4 columns and 8 rows"style="width:363px" class="Default PivotTable" aria-label="Analysis Case Processing Summary" role="complementary" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="1" data-NumRows="6" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="N;Percent" data-row-labels="Valid ;Excluded Missing or out-of-range group codes; At least one missing discriminating variable; Both missing or out-of-range group codes and at least one missing discriminating variable; Total;Total " data-layer-dimension="" data-column-dimension="Statistics;" data-row-dimension="Unweighted Cases;" data-maxColWidth="72">
+<caption class="title" style="width:363px">Analysis Case Processing Summary<span class="details">Analysis Case Processing Summary, table, 1 levels of column headers and 2 levels of row headers, table with 4 columns and 8 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" colspan="2">Unweighted Cases</td>
+<td class="columnLabels dataAreaLeft vCC role3">N</td>
+<td class="columnLabels vCC role3">Percent</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" colspan="2">Valid</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">83</td>
+<td class=" e dataAreaTop vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role2" rowspan="4">Excluded</td>
+<td class="rowLabels hCR vCR role3">Missing or out-of-range group codes</td>
+<td class=" o dataAreaLeft hCR vCC">0</td>
+<td class=" o hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">At least one missing discriminating variable</td>
+<td class=" e dataAreaLeft hCR vCC">0</td>
+<td class=" e hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">Both missing or out-of-range group codes and at least one missing discriminating variable</td>
+<td class=" o dataAreaLeft hCR vCC">0</td>
+<td class=" o hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">Total</td>
+<td class=" e dataAreaLeft hCR vCC">0</td>
+<td class=" e hCR vCC">.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" colspan="2">Total</td>
+<td class=" o dataAreaLeft hCR vCC">83</td>
+<td class=" o hCR vCC">100.0</td>
+</tr>
+<tr>
+<td  style="width:69px;padding:0px;border-spacing:0px"></td>
+<td  style="width:160px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Group Statistics, table, 2 levels of column headers and 2 levels of row headers, table with 6 columns and 15 rows"style="width:444px" class="Default PivotTable" aria-label="Group Statistics" role="complementary" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="2" data-NumRows="12" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Mean ;Std. Deviation ;Valid N (listwise) Unweighted; Weighted" data-row-labels="1 ta 7; st 3; tp 8;2 ta 7; st 3; tp 8;3 ta 7; st 3; tp 8;Total ta 7; st 3; tp 8" data-layer-dimension="" data-column-dimension="Statistics;" data-row-dimension="groups;Variables;" data-maxColWidth="72">
+<caption class="title" style="width:444px">Group Statistics<span class="details">Group Statistics, table, 2 levels of column headers and 2 levels of row headers, table with 6 columns and 15 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2" colspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hCC vCC role3" rowspan="2">Mean</td>
+<td class="columnLabels hDC vCC role3" rowspan="2">Std. Deviation</td>
+<td class="columnLabels hCC vCC role2" colspan="2">Valid N (listwise)</td>
+</tr>
+<tr>
+<td class="columnLabels vCC role3">Unweighted</td>
+<td class="columnLabels vCC role3">Weighted</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" rowspan="3">1</td>
+<td class="rowLabels dataAreaTop vCR role3">ta 7</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">4.317157363000001</td>
+<td class=" o dataAreaTop vCC">8.599881380000001</td>
+<td class=" o dataAreaTop vCC">27</td>
+<td class=" o dataAreaTop vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">53.227016150000004</td>
+<td class=" e hCR vCC">61.633770540000000</td>
+<td class=" e hCR vCC">27</td>
+<td class=" e hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-4.914874310000000</td>
+<td class=" o hCR vCC">6.743385670000000</td>
+<td class=" o hCR vCC">27</td>
+<td class=" o hCR vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="3">2</td>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">-7.708935482000000</td>
+<td class=" e hCR vCC">8.327339660000000</td>
+<td class=" e hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">-11.330195050000000</td>
+<td class=" o hCR vCC">23.897526930000000</td>
+<td class=" o hCR vCC">38</td>
+<td class=" o hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">1.542478073000000</td>
+<td class=" e hCR vCC">11.740381030000000</td>
+<td class=" e hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="3">3</td>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" o dataAreaLeft hCR vCC">1.128324589000000</td>
+<td class=" o hCR vCC">10.179499930000000</td>
+<td class=" o hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">-10.811073740000000</td>
+<td class=" e hCR vCC">13.387906030000000</td>
+<td class=" e hCR vCC">18</td>
+<td class=" e hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-7.909159506000001</td>
+<td class=" o hCR vCC">13.401045570000000</td>
+<td class=" o hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="3">Total</td>
+<td class="rowLabels hCR vCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC">-1.880318758000000</td>
+<td class=" e hCR vCC">10.324709720000000</td>
+<td class=" e hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">9.782924055000000</td>
+<td class=" o hCR vCC">49.198048340000000</td>
+<td class=" o hCR vCC">83</td>
+<td class=" o hCR vCC">83.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">-2.607859165000000</td>
+<td class=" e hCR vCC">11.390724310000000</td>
+<td class=" e hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td  style="width:48px;padding:0px;border-spacing:0px"></td>
+<td  style="width:48px;padding:0px;border-spacing:0px"></td>
+<td  style="width:96px;padding:0px;border-spacing:0px"></td>
+<td  style="width:96px;padding:0px;border-spacing:0px"></td>
+<td  style="width:85px;padding:0px;border-spacing:0px"></td>
+<td  style="width:71px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Pooled Within-Groups Matrices, table, 1 levels of column headers and 2 levels of row headers, table with 5 columns and 5 rows"style="width:329px" class="Default PivotTable" aria-label="Pooled Within-Groups Matrices" role="complementary" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="1" data-NumRows="3" data-NumCols="3" data-rowLabels="Corner" data-decimal-char="." data-col-labels="ta 7;st 3;tp 8" data-row-labels="Correlation ta 7; st 3; tp 8" data-layer-dimension="" data-column-dimension="Variables2;" data-row-dimension="Statistics;Variables;" data-maxColWidth="72">
+<caption class="title" style="width:329px">Pooled Within-Groups Matrices<span class="details">Pooled Within-Groups Matrices, table, 1 levels of column headers and 2 levels of row headers, table with 5 columns and 5 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" colspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft vCC role3">ta 7</td>
+<td class="columnLabels vCC role3">st 3</td>
+<td class="columnLabels vCC role3">tp 8</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" rowspan="3">Correlation</td>
+<td class="rowLabels dataAreaTop vCR role3">ta 7</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">1.000</td>
+<td class=" e dataAreaTop vCC">.150</td>
+<td class=" e dataAreaTop vCC">.116</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">st 3</td>
+<td class=" o dataAreaLeft hCR vCC">.150</td>
+<td class=" o hCR vCC">1.000</td>
+<td class=" o hCR vCC">-.094</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">tp 8</td>
+<td class=" e dataAreaLeft hCR vCC">.116</td>
+<td class=" e hCR vCC">-.094</td>
+<td class=" e hCR vCC">1.000</td>
+</tr>
+<tr>
+<td  style="width:80px;padding:0px;border-spacing:0px"></td>
+<td  style="width:48px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Analysis&nbsp;1</b></H1></CENTER><BR><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Summary&nbsp;of&nbsp;Canonical&nbsp;Discriminant&nbsp;Functions</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Eigenvalues, table, 1 levels of column headers and 1 levels of row headers, table with 5 columns and 5 rows"style="width:431px" class="Default PivotTable" aria-label="Eigenvalues" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="1" data-NumRows="2" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Eigenvalue;% of Variance;Cumulative %;Canonical Correlation" data-row-labels="1;2" data-layer-dimension="" data-column-dimension="Statistics;" data-row-dimension="Function;" data-maxColWidth="72">
+<caption class="title" style="width:431px">Eigenvalues<span class="details">Eigenvalues, table, 1 levels of column headers and 1 levels of row headers, table with 5 columns and 5 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels">Function</td>
+<td class="columnLabels dataAreaLeft vCC role3">Eigenvalue</td>
+<td class="columnLabels vCC role3">% of Variance</td>
+<td class="columnLabels vCC role3">Cumulative %</td>
+<td class="columnLabels vCC role3">Canonical Correlation</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" e dataAreaTop dataAreaLeft vCC" title="a. First 2 canonical discriminant functions were used in the analysis.">.856<sup>a</sup></td>
+<td class=" e dataAreaTop vCC">78.4</td>
+<td class=" e dataAreaTop vCC">78.4</td>
+<td class=" e dataAreaTop vCC">.679</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC" title="a. First 2 canonical discriminant functions were used in the analysis.">.236<sup>a</sup></td>
+<td class=" o hCR vCC">21.6</td>
+<td class=" o hCR vCC">100.0</td>
+<td class=" o hCR vCC">.437</td>
+</tr>
+</tbody><tfoot style="display:table-footer-group">
+<tr>
+<td class="footnotes" colspan="5">a. First 2 canonical discriminant functions were used in the analysis.</td>
+</tr>
+<tr>
+<td  style="width:66px;padding:0px;border-spacing:0px"></td>
+<td  style="width:80px;padding:0px;border-spacing:0px"></td>
+<td  style="width:94px;padding:0px;border-spacing:0px"></td>
+<td  style="width:95px;padding:0px;border-spacing:0px"></td>
+<td  style="width:96px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Wilks' Lambda, table, 1 levels of column headers and 1 levels of row headers, table with 5 columns and 4 rows"style="width:432px" class="Default PivotTable" aria-label="Wilks' Lambda" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="1" data-NumRows="2" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Wilks' Lambda;Chi-square;df;Sig." data-row-labels="1 through 2;2" data-layer-dimension="" data-column-dimension="Statistics;" data-row-dimension="Test of Function(s);" data-maxColWidth="72">
+<caption class="title" style="width:432px">Wilks' Lambda<span class="details">Wilks' Lambda, table, 1 levels of column headers and 1 levels of row headers, table with 5 columns and 4 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels">Test of Function(s)</td>
+<td class="columnLabels dataAreaLeft vCC role3">Wilks' Lambda</td>
+<td class="columnLabels vCC role3">Chi-square</td>
+<td class="columnLabels vCC role3">df</td>
+<td class="columnLabels vCC role3">Sig.</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1 through 2</td>
+<td class=" e dataAreaTop dataAreaLeft vCC">.436</td>
+<td class=" e dataAreaTop vCC">65.584</td>
+<td class=" e dataAreaTop vCC">6</td>
+<td class=" e dataAreaTop vCC">.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC">.809</td>
+<td class=" o hCR vCC">16.731</td>
+<td class=" o hCR vCC">2</td>
+<td class=" o hCR vCC">.000</td>
+</tr>
+<tr>
+<td  style="width:121px;padding:0px;border-spacing:0px"></td>
+<td  style="width:96px;padding:0px;border-spacing:0px"></td>
+<td  style="width:81px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Standardized Canonical Discriminant Function Coefficients, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 6 rows"style="width:182px" class="Default PivotTable" aria-label="Standardized Canonical Discriminant Function Coefficients" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="3" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="ta 7;st 3;tp 8" data-layer-dimension="" data-column-dimension="Function;" data-row-dimension="Variables;" data-maxColWidth="72">
+<caption class="title" style="width:182px">Standardized Canonical Discriminant Function Coefficients<span class="details">Standardized Canonical Discriminant Function Coefficients, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 6 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">ta 7</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">.583</td>
+<td class=" o dataAreaTop vCC">-.575</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">.679</td>
+<td class=" e hCR vCC">.716</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-.288</td>
+<td class=" o hCR vCC">.681</td>
+</tr>
+<tr>
+<td  style="width:48px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Structure Matrix, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 8 rows"style="width:182px" class="Default PivotTable" aria-label="Structure Matrix" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="3" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="st 3;ta 7;tp 8" data-layer-dimension="" data-column-dimension="Function;" data-row-dimension="Variables;" data-maxColWidth="72">
+<caption class="title" style="width:182px">Structure Matrix<span class="details">Structure Matrix, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 8 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">st 3</td>
+<td class=" o dataAreaTop dataAreaLeft vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.794<sup>*</sup></td>
+<td class=" o dataAreaTop vCC">.565</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">ta 7</td>
+<td class=" e dataAreaLeft hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.651<sup>*</sup></td>
+<td class=" e hCR vCC">-.388</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-.284</td>
+<td class=" o hCR vCC" title="*. Largest absolute correlation between each variable and any discriminant function">.547<sup>*</sup></td>
+</tr>
+</tbody><tfoot style="display:table-footer-group">
+<tr>
+<td class="caption" colspan="3">Pooled within-groups correlations between discriminating variables and standardized canonical discriminant functions <br> Variables ordered by absolute size of correlation within function.</td>
+</tr>
+<tr>
+<td class="footnotes" colspan="3">*. Largest absolute correlation between each variable and any discriminant function</td>
+</tr>
+<tr>
+<td  style="width:48px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Canonical Discriminant Function Coefficients, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 8 rows"style="width:211px" class="Default PivotTable" aria-label="Canonical Discriminant Function Coefficients" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="4" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="ta 7;st 3;tp 8;(Constant)" data-layer-dimension="" data-column-dimension="Function;" data-row-dimension="Variables;" data-maxColWidth="72">
+<caption class="title" style="width:211px">Canonical Discriminant Function Coefficients<span class="details">Canonical Discriminant Function Coefficients, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 8 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">&nbsp;</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">ta 7</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">.066</td>
+<td class=" o dataAreaTop vCC">-.065</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">st 3</td>
+<td class=" e dataAreaLeft hCR vCC">.017</td>
+<td class=" e hCR vCC">.018</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">tp 8</td>
+<td class=" o dataAreaLeft hCR vCC">-.027</td>
+<td class=" o hCR vCC">.063</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">(Constant)</td>
+<td class=" e dataAreaLeft hCR vCC">-.115</td>
+<td class=" e hCR vCC">-.136</td>
+</tr>
+</tbody><tfoot style="display:table-footer-group">
+<tr>
+<td class="caption" colspan="3">Unstandardized coefficients</td>
+</tr>
+<tr>
+<td  style="width:77px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Functions at Group Centroids, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 7 rows"style="width:192px" class="Default PivotTable" aria-label="Functions at Group Centroids" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="3" data-NumCols="2" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Function 1; 2" data-row-labels="1;2;3" data-layer-dimension="" data-column-dimension="Function;" data-row-dimension="groups;" data-maxColWidth="72">
+<caption class="title" style="width:192px">Functions at Group Centroids<span class="details">Functions at Group Centroids, table, 2 levels of column headers and 1 levels of row headers, table with 3 columns and 7 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hCC vCC role1" colspan="2">Function</td>
+</tr>
+<tr>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">1.222</td>
+<td class=" o dataAreaTop vCC">.245</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">-.860</td>
+<td class=" e hCR vCC">.255</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">-.017</td>
+<td class=" o hCR vCC">-.906</td>
+</tr>
+</tbody><tfoot style="display:table-footer-group">
+<tr>
+<td class="caption" colspan="3">Unstandardized canonical discriminant functions evaluated at group means</td>
+</tr>
+<tr>
+<td  style="width:58px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tfoot>
+</table>
+</div><CENTER><H1><b><head><style type="text/css">p{color:0;font-family:SansSerif;font-size:18pt;font-style:normal;font-weight:bold;text-decoration:none}</style></head><BR>Classification&nbsp;Statistics</b></H1></CENTER><BR>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Classification Processing Summary, table, 0 levels of column headers and 2 levels of row headers, table with 3 columns and 5 rows"style="width:296px" class="Default PivotTable" aria-label="Classification Processing Summary" role="complementary" data-lookName="Default" data-rowLabelWidth="2" data-colLabelHeight="0" data-NumRows="4" data-NumCols="1" data-rowLabels="Corner" data-decimal-char="." data-col-labels="" data-row-labels="Processed ;Excluded Missing or out-of-range group codes; At least one missing discriminating variable;Used in Output " data-layer-dimension="" data-column-dimension="" data-row-dimension="Unweighted Cases;" data-maxColWidth="72">
+<caption class="title" style="width:296px">Classification Processing Summary<span class="details">Classification Processing Summary, table, 0 levels of column headers and 2 levels of row headers, table with 3 columns and 5 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="rowLabels dataAreaTop role3" colspan="2">Processed</td>
+<td class=" o dataAreaTop dataAreaLeft">83</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role2" rowspan="2">Excluded</td>
+<td class="rowLabels hCR vCR role3">Missing or out-of-range group codes</td>
+<td class=" e dataAreaLeft hCR">0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">At least one missing discriminating variable</td>
+<td class=" o dataAreaLeft hCR">0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" colspan="2">Used in Output</td>
+<td class=" e dataAreaLeft hCR">83</td>
+</tr>
+<tr>
+<td  style="width:69px;padding:0px;border-spacing:0px"></td>
+<td  style="width:160px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Prior Probabilities for Groups, table, 2 levels of column headers and 1 levels of row headers, table with 4 columns and 7 rows"style="width:286px" class="Default PivotTable" aria-label="Prior Probabilities for Groups" role="complementary" data-lookName="Default" data-rowLabelWidth="1" data-colLabelHeight="2" data-NumRows="4" data-NumCols="3" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Prior ;Cases Used in Analysis Unweighted; Weighted" data-row-labels="1;2;3;Total" data-layer-dimension="" data-column-dimension="Statistics;" data-row-dimension="groups;" data-maxColWidth="72">
+<caption class="title" style="width:286px">Prior Probabilities for Groups<span class="details">Prior Probabilities for Groups, table, 2 levels of column headers and 1 levels of row headers, table with 4 columns and 7 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels" rowspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hDC vCC role3" rowspan="2">Prior</td>
+<td class="columnLabels hCC vCC role2" colspan="2">Cases Used in Analysis</td>
+</tr>
+<tr>
+<td class="columnLabels vCC role3">Unweighted</td>
+<td class="columnLabels vCC role3">Weighted</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">.325</td>
+<td class=" o dataAreaTop vCC">27</td>
+<td class=" o dataAreaTop vCC">27.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">.458</td>
+<td class=" e hCR vCC">38</td>
+<td class=" e hCR vCC">38.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">.217</td>
+<td class=" o hCR vCC">18</td>
+<td class=" o hCR vCC">18.000</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3">Total</td>
+<td class=" e dataAreaLeft hCR vCC">1.000</td>
+<td class=" e hCR vCC">83</td>
+<td class=" e hCR vCC">83.000</td>
+</tr>
+<tr>
+<td  style="width:58px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:85px;padding:0px;border-spacing:0px"></td>
+<td  style="width:76px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tbody>
+</table>
+</div><div><img title="All-Groups Scatter Plot" alt="All-Groups Scatter Plot" src="data:image/jpg;base64,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of8ApXNW9WD4Q/5Ak/8A2E9Q/wDSuat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P8A69Lz+cNdRXL3H/I9aH/16Xn84a6S4uIbWB57iVIokGWd2AA+pNAElFUbPWNPv5TFbXSPLjdsOVYj1AOCR7ir1NprRhc5zxhcRWMGl6lJdWtu9nfCSM3btHAzGKSMq8gVvLG12wxGNwUdxWV4M0y7l/szWJWh8oLqudoZd/2i9WWN0BH3SqE8nPzL15x3FFIDhV8F6jcaG2k3U9rFFbaJcaLaTRO0jSJKsa+ZIpUbSBEvygtnJ5qpr+na95N7qmoJpsVxdT6LbQRQSvKitHf7iWLKpIJlB4HqO2T6LRQBx934Zv73Sr03Fpp095e363sts1zKiR7YkiAjnRQ6tiNTv292GOcjc8O2V/p+g2trqdz9pu4w2+Tez4BYlV3sAX2qQu4gFsZPJrUooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOS8If8gSf/sJ6h/6VzVvVg+EP+QJP/wBhPUP/AErmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/AJHrQ/8Ar0vP5w1o6iEbX9KW4x9nxKUDdDONuz8dvmEfSs64/wCR60P/AK9Lz+cNbOrGCS3W1mtRdtOcJAcckc5J7Adc9uMc4pxkou7Jk0ldlfxGE/s6Nxj7Us8f2Uj73mbgBj8M59s9qpSNfRfEayR7+R7K40y6dbQKFRCklsAx7s3zvyegOAByTJaWaaXdxT3ViAWIjS4+1yXHlFuAP3nKg8DI/HFT3Gu6JBrsVrO4/tBSLdZfszssZk2kRmULtQthDtLAn5eDxQ5JqyFGSZs0UUUiwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK5nXfFT6Zrtro9qmltdTReb/xMNR+yg5baipiNy7EhuMD7vvXTVia9o19rMU1o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AUUUUAFFFFABRRRQAVT1O7ksrIyQorSs6RRhzhdzsFBPsM5q5UVzbQ3du9vPGJInGGU96cbJ6gyhBPe22pxWd5NDOs8bOjxxmMqVIyCMnIO7g9se9alUrTS7ezmaZTNJMV2eZNK0jBfQEngfz71dpyab0EgoooqRhRRUF1e2tiivd3MUCscKZHC5PoM00r7AT0UyKWOeJZYZEkjcZV0OQR6gin0gCiiigAooooAKKKKAMa4/5HrQ/wDr0vP5w11Fcvcf8j1of/XpefzhrqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA5Lwh/yBJ/+wnqH/pXNW9WD4Q/5Ak//YT1D/0rmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsq7Sa21hL8Wj3URg8oeVjfEd2SQCRw3AOOflFatFOLsJq5naPbywQXDyw+R587SrBkHywccHHGSQWOO7GtGiiiTu7glYKKKKQwooooAKKKKAMa4/5HrQ/+vS8/nDXUVy9x/yPWh/9el5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAorxnw34w8balptx4nivrTVUt53W/wDDEVsqXFnGHYDYw+ZnwpIVuoyBk11vwu8V3XjDStc1Ka5ae3XWbiKyLRqhS3Co0akADoG6nJ9TQB3NFFFABRRRQByXhD/kCT/9hPUP/Suat6sHwh/yBJ/+wnqH/pXNW9QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRVCSS6uL2WC3mjhWFVJZk3lifbIwP5+2KTdiZSsX6KrWFw91aCSQKJAzI23oSrFSR7cVZoTurji01dBRUFxeQWu0TSbS33VAJJ9cAc1JDNHcRLLC6vGwyGU5Bour2DmV7X1H0UUUxhVW6upIpYoIIRLPKGYBm2qFGMknB9R271NNNFbQtNPKkUSDLO7AAD3JqnuttVVLmxvVLxEqJYWDYzjKkfgOPYUmna6Ine3u7k9pdNOZY5YvKmiba6htw5GQQeMj8Ks1XtbUWwkJkaWWRtzyNjJOMdBwAAKsUK9t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sVF9nTOecZztzxn6VLUxTW4woooqhBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBjXH/I9aH/ANel5/OGuorl7j/ketD/AOvS8/nDXUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQByXhD/AJAk/wD2E9Q/9K5q3qwfCH/IEn/7Ceof+lc1b1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUx5EjwGPJ6ADJpysHUMpBB7ildbALRRRTAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/AJHrQ/8Ar0vP5w11Fcvcf8j1of8A16Xn84a6igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOS8If8AIEn/AOwnqH/pXNW9WD4Q/wCQJP8A9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAiYOs3mKu4FdpGcEUsKMqndgFiWwO1SUUuXW4BRRRTAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/AJHrQ/8Ar0vP5w11Fcvcf8j1of8A16Xn84a6igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAOS8If8AIEn/AOwnqH/pXNW9WD4Q/wCQJP8A9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P/r0vP5w11Fcvcf8j1of/XpefzhrqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA5Lwh/yBJ/+wnqH/pXNW9WD4Q/5Ak//AGE9Q/8ASuat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP8AketD/wCvS8/nDXUVy9x/yPWh/wDXpefzhrqKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACuV8Sa5qWn6tDbW00VjZiAyzXtzpc91EGLYALRuixgBWLFjgZXpXTTwQ3VvLb3EUc0EqFJI5FDK6kYIIPBBHGKxLnwjYS2wsrWWbT9MaJoJtPs1jS3ljYsWUoVO3O5slNpOeTwMADtbv9UXVrHStIeziubiCe5aS7iaRNsRjXaArKckyrzngA8Gs+38Y39xpun3lv4U1W8ju7SG5Ets8Gz50DbRvkU8Zx0rT1Tw8dTuVuV1bULO4j3rHLbeUGjjdUDxjch+UlA2TlgehAAA07Kzg06wtrK2TZBbxLDGvoqgAD8hQByngeV5/DRmkheB5L++ZopMboybuU7TgkZHTgkV0dYPhD/kCT/9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDGuP+R60P/r0vP5w11Fcvcf8AI9aH/wBel5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkvCH/IEn/wCwnqH/AKVzVvVg+EP+QJP/ANhPUP8A0rmreoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAxrj/ketD/AOvS8/nDXUVy9x/yPWh/9el5/OGuooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigDkvCH/IEn/7Ceof+lc1b1YPhD/kCT/9hPUP/Suat6gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo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KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAK9/Y2+p6dc2F5H5lrdRPDMm4jcjAhhkcjIJ6UWFjb6Zp1tYWcfl2trEkMKbidqKAFGTycADrViigDkIfhb4KttTTUoNBhjvEuku0kSWQbZVOQQN2AM87funjI4FX5vBPh240fVNJl0/dY6rdte3sXnSDzZiysWzuyvKKcAgcdK6CigDA1bwR4b13WbXV9T0iC5v7bHlSsWHQ5G4A4bB/vA0y/wDAnhrU9ZudXu9LV7+5t3tZpllkQyRshjYEKwH3TjOM9OeBXRUUAc1qnw/8La1pmn6dqOkRT22nRrDagyOGjRQAF3A7iMAdSc45q/8A8Izo32zSLpbFEl0dJEsPLZlWBXUIwCg4OVAHIOO1a1FAGfpWiadon23+zrfyft13Je3Hzs2+Z8bm5JxnA4GB7UXeiadfaxp2rXNvvvtN837JLvYeX5i7X4BwcgY5Bx2rQooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z"></div>
+<div>
+<style>
+*{
+border-collapse:collapse;
+}
+.Default .title{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:bold;
+padding-left:6pt;
+vertical-align:middle;
+font-size:11pt;
+padding-bottom:6pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .layers{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .cornerLabels{
+background-color:#ffffff;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .columnLabels{
+background-color:#ffffff;
+padding-top:2pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:bottom;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:center;
+padding-right:8pt;
+}
+.Default .rowLabels{
+background-color:#e0e0e0;
+padding-top:3pt;
+color:#264a60;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .o, .Default .e{
+background-color:#ffffff;
+padding-top:3pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:2pt;
+font-family:sans-serif;
+text-align:right;
+padding-right:8pt;
+}
+.Default .o{
+background-color:null;
+color:null;
+}
+.Default .e{
+background-color:#ffffff;
+color:#010205;
+}
+.Default .caption{
+background-color:#ffffff;
+padding-top:1pt;
+color:#010205;
+font-weight:normal;
+padding-left:6pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:1pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:8pt;
+}
+.Default .footnotes{
+background-color:#ffffff;
+padding-top:2pt;
+color:#010205;
+font-weight:normal;
+padding-left:18pt;
+vertical-align:top;
+font-size:9pt;
+padding-bottom:3pt;
+font-family:sans-serif;
+text-align:left;
+padding-right:18pt;
+}
+.Default .titleLayerSeparator{
+border-top:1px none #152935;
+}
+.Default .innerFrameBd{
+border-top:1px none #152935;
+border-right:1px none #152935;
+border-left:1px none #152935;
+border-bottom:1px solid #152935;
+}
+.Default .dataAreaLeft{
+border-left:1px none #152935;
+}
+.Default .dataAreaTop{
+border-top:1px solid #152935;
+}
+.Default .hCR{
+border-top:1px solid #aeaeae;
+}
+.Default .hDR{
+border-top:1px none #aeaeae;
+}
+.Default .vCR{
+border-left:1px none #aeaeae;
+}
+.Default .vDR{
+border-left:1px none #aeaeae;
+}
+.Default .hCC{
+border-bottom:1px none #aeaeae;
+}
+.Default .hDC{
+border-bottom:1px none #aeaeae;
+}
+.Default .vCC{
+border-right:1px solid #e0e0e0;
+}
+.Default .vDC{
+border-right:1px none #aeaeae;
+}
+</style>
+</div>
+<div class="itemBody">
+<table summary="Classification Results, table, 2 levels of column headers and 3 levels of row headers, table with 7 columns and 18 rows"style="width:490px" class="Default PivotTable" aria-label="Classification Results" role="complementary" data-lookName="Default" data-rowLabelWidth="3" data-colLabelHeight="2" data-NumRows="12" data-NumCols="4" data-rowLabels="Corner" data-decimal-char="." data-col-labels="Predicted Group Membership 1; 2; 3;Total " data-row-labels="Original Count 1;  2;  3; % 1;  2;  3;Cross-validated Count 1;  2;  3; % 1;  2;  3" data-layer-dimension="" data-column-dimension="Predicted Group;" data-row-dimension="Type;Statistics;groups;" data-maxColWidth="72">
+<caption class="title" style="width:490px" title="a. 72.3% of original grouped cases correctly classified.
+c. 66.3% of cross-validated grouped cases correctly classified.">Classification Results<sup>a,c</sup><span class="details">Classification Results, table, 2 levels of column headers and 3 levels of row headers, table with 7 columns and 18 rows</span></caption>
+<tbody class="PivotBody defaultLayer innerFrameBd">
+<tr>
+<td class="cornerLabels"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="cornerLabels" rowspan="2">groups</td>
+<td class="columnLabels dataAreaLeft hCC vCC role2" colspan="3">Predicted Group Membership</td>
+<td class="columnLabels hCC vCC role3" rowspan="2">Total</td>
+</tr>
+<tr>
+<td class="cornerLabels"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="columnLabels dataAreaLeft vCC role3">1</td>
+<td class="columnLabels vCC role3">2</td>
+<td class="columnLabels vCC role3">3</td>
+</tr>
+<tr>
+<td class="rowLabels dataAreaTop role3" rowspan="6">Original</td>
+<td class="rowLabels dataAreaTop vCR role3" rowspan="3">Count</td>
+<td class="rowLabels dataAreaTop vCR role3">1</td>
+<td class=" o dataAreaTop dataAreaLeft vCC">18</td>
+<td class=" o dataAreaTop vCC">6</td>
+<td class=" o dataAreaTop vCC">3</td>
+<td class=" o dataAreaTop vCC">27</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">1</td>
+<td class=" e hCR vCC">35</td>
+<td class=" e hCR vCC">2</td>
+<td class=" e hCR vCC">38</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">0</td>
+<td class=" o hCR vCC">11</td>
+<td class=" o hCR vCC">7</td>
+<td class=" o hCR vCC">18</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3" rowspan="3">%</td>
+<td class="rowLabels hCR vCR role3">1</td>
+<td class=" e dataAreaLeft hCR vCC">66.7</td>
+<td class=" e hCR vCC">22.2</td>
+<td class=" e hCR vCC">11.1</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC">2.6</td>
+<td class=" o hCR vCC">92.1</td>
+<td class=" o hCR vCC">5.3</td>
+<td class=" o hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" e dataAreaLeft hCR vCC">.0</td>
+<td class=" e hCR vCC">61.1</td>
+<td class=" e hCR vCC">38.9</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR role3" rowspan="6" title="b. Cross validation is done only for those cases in the analysis. In cross validation, each case is classified by the functions derived from all cases other than that case.">Cross-validated<sup>b</sup></td>
+<td class="rowLabels hCR vCR role3" rowspan="3">Count</td>
+<td class="rowLabels hCR vCR role3">1</td>
+<td class=" o dataAreaLeft hCR vCC">16</td>
+<td class=" o hCR vCC">8</td>
+<td class=" o hCR vCC">3</td>
+<td class=" o hCR vCC">27</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" e dataAreaLeft hCR vCC">1</td>
+<td class=" e hCR vCC">34</td>
+<td class=" e hCR vCC">3</td>
+<td class=" e hCR vCC">38</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" o dataAreaLeft hCR vCC">2</td>
+<td class=" o hCR vCC">11</td>
+<td class=" o hCR vCC">5</td>
+<td class=" o hCR vCC">18</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3" rowspan="3">%</td>
+<td class="rowLabels hCR vCR role3">1</td>
+<td class=" e dataAreaLeft hCR vCC">59.3</td>
+<td class=" e hCR vCC">29.6</td>
+<td class=" e hCR vCC">11.1</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">2</td>
+<td class=" o dataAreaLeft hCR vCC">2.6</td>
+<td class=" o hCR vCC">89.5</td>
+<td class=" o hCR vCC">7.9</td>
+<td class=" o hCR vCC">100.0</td>
+</tr>
+<tr>
+<td class="rowLabels hCR vCR role3">3</td>
+<td class=" e dataAreaLeft hCR vCC">11.1</td>
+<td class=" e hCR vCC">61.1</td>
+<td class=" e hCR vCC">27.8</td>
+<td class=" e hCR vCC">100.0</td>
+</tr>
+</tbody><tfoot style="display:table-footer-group">
+<tr>
+<td class="footnotes" colspan="7">a. 72.3% of original grouped cases correctly classified.</td>
+<td class="footnotes"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="footnotes"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+</tr>
+<tr>
+<td class="footnotes" colspan="7">b. Cross validation is done only for those cases in the analysis. In cross validation, each case is classified by the functions derived from all cases other than that case.</td>
+<td class="footnotes"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="footnotes"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+</tr>
+<tr>
+<td class="footnotes" colspan="7">c. 66.3% of cross-validated grouped cases correctly classified.</td>
+<td class="footnotes"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+<td class="footnotes"  bgcolor="#ffffff"><font color="#000000">&nbsp;</font></td>
+</tr>
+<tr>
+<td  style="width:112px;padding:0px;border-spacing:0px"></td>
+<td  style="width:52px;padding:0px;border-spacing:0px"></td>
+<td  style="width:58px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+<td  style="width:67px;padding:0px;border-spacing:0px"></td>
+</tr>
+</tfoot>
+</table>
+</div><p align="left"><head><style type="text/css">p{color:0;font-family:Monospaced;font-size:14pt;font-style:normal;font-weight:normal;text-decoration:none}</style></head><BR><BR>OUTPUT EXPORT /CONTENTS EXPORT=VISIBLE/HTML DOCUMENTFILE="C:\Users\Jorge\GDrive\Universidad\BSICOS\Project\Results_SPSS\3Vars_Josechu_ICS(60HzFiltered).htm".</p><BR></body></html>
